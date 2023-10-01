@@ -11,6 +11,8 @@
 		E328A15A2ACA09FF00B3E3B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E328A1592ACA09FF00B3E3B6 /* ContentView.swift */; };
 		E328A15C2ACA0A0100B3E3B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E328A15B2ACA0A0100B3E3B6 /* Assets.xcassets */; };
 		E328A15F2ACA0A0100B3E3B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E328A15E2ACA0A0100B3E3B6 /* Preview Assets.xcassets */; };
+		E328A18B2ACA12E400B3E3B6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E328A18D2ACA12E400B3E3B6 /* Localizable.strings */; };
+		E328A1912ACA1A7D00B3E3B6 /* GrayTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E328A1902ACA1A7D00B3E3B6 /* GrayTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,10 @@
 		E328A1592ACA09FF00B3E3B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E328A15B2ACA0A0100B3E3B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E328A15E2ACA0A0100B3E3B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E328A18C2ACA12E400B3E3B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E328A18E2ACA12E600B3E3B6 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E328A18F2ACA12E700B3E3B6 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E328A1902ACA1A7D00B3E3B6 /* GrayTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +57,19 @@
 		E328A1562ACA09FF00B3E3B6 /* alarmApp */ = {
 			isa = PBXGroup;
 			children = (
+				E328A16C2ACA0A9200B3E3B6 /* Sound */,
+				E328A16B2ACA0A7F00B3E3B6 /* Notification */,
+				E328A16A2ACA0A6E00B3E3B6 /* Time&Date */,
+				E328A1692ACA0A6400B3E3B6 /* Fonts */,
+				E328A1682ACA0A4F00B3E3B6 /* Constansts */,
+				E328A1672ACA0A3A00B3E3B6 /* Views */,
+				E328A1662ACA0A2900B3E3B6 /* ViewModel */,
+				E328A1652ACA0A1900B3E3B6 /* Model */,
 				E328A1572ACA09FF00B3E3B6 /* alarmAppApp.swift */,
 				E328A1592ACA09FF00B3E3B6 /* ContentView.swift */,
 				E328A15B2ACA0A0100B3E3B6 /* Assets.xcassets */,
 				E328A15D2ACA0A0100B3E3B6 /* Preview Content */,
+				E328A18D2ACA12E400B3E3B6 /* Localizable.strings */,
 			);
 			path = alarmApp;
 			sourceTree = "<group>";
@@ -65,6 +80,95 @@
 				E328A15E2ACA0A0100B3E3B6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E328A1652ACA0A1900B3E3B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E328A1662ACA0A2900B3E3B6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E328A1672ACA0A3A00B3E3B6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E328A1702ACA0AE500B3E3B6 /* Unused Views */,
+				E328A16F2ACA0AD400B3E3B6 /* Supporting Views */,
+				E328A16E2ACA0AC800B3E3B6 /* Sub Views */,
+				E328A16D2ACA0AB900B3E3B6 /* Main Views */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E328A1682ACA0A4F00B3E3B6 /* Constansts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constansts;
+			sourceTree = "<group>";
+		};
+		E328A1692ACA0A6400B3E3B6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E328A16A2ACA0A6E00B3E3B6 /* Time&Date */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Time&Date";
+			sourceTree = "<group>";
+		};
+		E328A16B2ACA0A7F00B3E3B6 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		E328A16C2ACA0A9200B3E3B6 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		E328A16D2ACA0AB900B3E3B6 /* Main Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Main Views";
+			sourceTree = "<group>";
+		};
+		E328A16E2ACA0AC800B3E3B6 /* Sub Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Sub Views";
+			sourceTree = "<group>";
+		};
+		E328A16F2ACA0AD400B3E3B6 /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				E328A1902ACA1A7D00B3E3B6 /* GrayTextView.swift */,
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
+		E328A1702ACA0AE500B3E3B6 /* Unused Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Unused Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,7 +212,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
+				sv,
+				ru,
 			);
 			mainGroup = E328A14B2ACA09FF00B3E3B6;
 			productRefGroup = E328A1552ACA09FF00B3E3B6 /* Products */;
@@ -126,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E328A15F2ACA0A0100B3E3B6 /* Preview Assets.xcassets in Resources */,
+				E328A18B2ACA12E400B3E3B6 /* Localizable.strings in Resources */,
 				E328A15C2ACA0A0100B3E3B6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,10 +245,24 @@
 			files = (
 				E328A15A2ACA09FF00B3E3B6 /* ContentView.swift in Sources */,
 				E328A1582ACA09FF00B3E3B6 /* alarmAppApp.swift in Sources */,
+				E328A1912ACA1A7D00B3E3B6 /* GrayTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E328A18D2ACA12E400B3E3B6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E328A18C2ACA12E400B3E3B6 /* en */,
+				E328A18E2ACA12E600B3E3B6 /* ru */,
+				E328A18F2ACA12E700B3E3B6 /* sv */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E328A1602ACA0A0100B3E3B6 /* Debug */ = {
