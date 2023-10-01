@@ -19,6 +19,6 @@ struct GrayTextView: View {
 
 struct GrayTextView_Previews: PreviewProvider {
     static var previews: some View {
-        GrayTextView(text: "On")
+        GrayTextView(text: "Add Alarm")
     }
 }
