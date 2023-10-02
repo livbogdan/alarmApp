@@ -13,6 +13,7 @@
 		E328A15F2ACA0A0100B3E3B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E328A15E2ACA0A0100B3E3B6 /* Preview Assets.xcassets */; };
 		E328A18B2ACA12E400B3E3B6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E328A18D2ACA12E400B3E3B6 /* Localizable.strings */; };
 		E328A1912ACA1A7D00B3E3B6 /* GrayTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E328A1902ACA1A7D00B3E3B6 /* GrayTextView.swift */; };
+		E3D1CA7C2ACABD1300190621 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CA7B2ACABD1300190621 /* ColorConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		E328A18E2ACA12E600B3E3B6 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E328A18F2ACA12E700B3E3B6 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E328A1902ACA1A7D00B3E3B6 /* GrayTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayTextView.swift; sourceTree = "<group>"; };
+		E3D1CA7B2ACABD1300190621 /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,7 @@
 				E328A16B2ACA0A7F00B3E3B6 /* Notification */,
 				E328A16A2ACA0A6E00B3E3B6 /* Time&Date */,
 				E328A1692ACA0A6400B3E3B6 /* Fonts */,
-				E328A1682ACA0A4F00B3E3B6 /* Constansts */,
+				E328A1682ACA0A4F00B3E3B6 /* Constants */,
 				E328A1672ACA0A3A00B3E3B6 /* Views */,
 				E328A1662ACA0A2900B3E3B6 /* ViewModel */,
 				E328A1652ACA0A1900B3E3B6 /* Model */,
@@ -107,11 +109,12 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		E328A1682ACA0A4F00B3E3B6 /* Constansts */ = {
+		E328A1682ACA0A4F00B3E3B6 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				E3D1CA7B2ACABD1300190621 /* ColorConstants.swift */,
 			);
-			path = Constansts;
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		E328A1692ACA0A6400B3E3B6 /* Fonts */ = {
@@ -246,6 +249,7 @@
 				E328A15A2ACA09FF00B3E3B6 /* ContentView.swift in Sources */,
 				E328A1582ACA09FF00B3E3B6 /* alarmAppApp.swift in Sources */,
 				E328A1912ACA1A7D00B3E3B6 /* GrayTextView.swift in Sources */,
+				E3D1CA7C2ACABD1300190621 /* ColorConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +319,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -369,7 +373,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
