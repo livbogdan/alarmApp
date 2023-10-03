@@ -14,6 +14,8 @@
 		E328A18B2ACA12E400B3E3B6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E328A18D2ACA12E400B3E3B6 /* Localizable.strings */; };
 		E328A1912ACA1A7D00B3E3B6 /* GrayTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E328A1902ACA1A7D00B3E3B6 /* GrayTextView.swift */; };
 		E3D1CA7C2ACABD1300190621 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CA7B2ACABD1300190621 /* ColorConstants.swift */; };
+		E3D1CA7E2ACB05AB00190621 /* TimeOfDayIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CA7D2ACB05AB00190621 /* TimeOfDayIcon.swift */; };
+		E3D1CA802ACB067100190621 /* Time&DateSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CA7F2ACB067100190621 /* Time&DateSupport.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		E328A18F2ACA12E700B3E3B6 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E328A1902ACA1A7D00B3E3B6 /* GrayTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayTextView.swift; sourceTree = "<group>"; };
 		E3D1CA7B2ACABD1300190621 /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
+		E3D1CA7D2ACB05AB00190621 /* TimeOfDayIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOfDayIcon.swift; sourceTree = "<group>"; };
+		E3D1CA7F2ACB067100190621 /* Time&DateSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Time&DateSupport.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 		E328A16A2ACA0A6E00B3E3B6 /* Time&Date */ = {
 			isa = PBXGroup;
 			children = (
+				E3D1CA7F2ACB067100190621 /* Time&DateSupport.swift */,
 			);
 			path = "Time&Date";
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				E328A1902ACA1A7D00B3E3B6 /* GrayTextView.swift */,
+				E3D1CA7D2ACB05AB00190621 /* TimeOfDayIcon.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -250,6 +256,8 @@
 				E328A1582ACA09FF00B3E3B6 /* alarmAppApp.swift in Sources */,
 				E328A1912ACA1A7D00B3E3B6 /* GrayTextView.swift in Sources */,
 				E3D1CA7C2ACABD1300190621 /* ColorConstants.swift in Sources */,
+				E3D1CA802ACB067100190621 /* Time&DateSupport.swift in Sources */,
+				E3D1CA7E2ACB05AB00190621 /* TimeOfDayIcon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
