@@ -19,3 +19,7 @@ let pink = Color("pink")
 let purple = Color("purple")
 
 let yellow = Color("yellow")
+
+let gradColorList = [yellow,pink,purple,blue]
+
+let mainColors = [pink,purple,blue,yellow,gray,black]

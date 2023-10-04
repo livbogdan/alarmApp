@@ -47,3 +47,23 @@ func dateToPercent(date: Date) -> CGFloat {
     // Calculate the percentage of the day based on the hour and minute.
     return CGFloat(result.hour) / 24 + CGFloat(result.minute) / (60*24)
 }
+
+//Extraction  of the Date that enables to substract dates
+extension Date {
+    static func - (lhs: Date, rhs: Date) -> TimeInterval {
+        lhs.timeIntervalSinceReferenceDate - rhs.timeIntervalSinceReferenceDate
+    }
+}
+
+func formatDate(date: Date) -> String {
+    let result = getTimeComponents(date: date)
+    
+    return
+        "\(result.day) - \(result.minute) -\(result.year)(\(result.hour):\(result.minute)) "
+}
+
+func dateToTimeModel(date: Date) -> TimeModel {
+    let result = getTimeComponents(date: date)
+    
+    return TimeModel(hours: result.hour, minutes: result.minute)
+}

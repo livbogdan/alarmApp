@@ -16,6 +16,10 @@
 		E3D1CA7C2ACABD1300190621 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CA7B2ACABD1300190621 /* ColorConstants.swift */; };
 		E3D1CA7E2ACB05AB00190621 /* TimeOfDayIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CA7D2ACB05AB00190621 /* TimeOfDayIcon.swift */; };
 		E3D1CA802ACB067100190621 /* Time&DateSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CA7F2ACB067100190621 /* Time&DateSupport.swift */; };
+		E3D1CA822ACC875A00190621 /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CA812ACC875A00190621 /* TimeModel.swift */; };
+		E3D1CA842ACC8C4A00190621 /* AlarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CA832ACC8C4A00190621 /* AlarmModel.swift */; };
+		E3D1CA862ACDC47300190621 /* ActivityConstans.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CA852ACDC47300190621 /* ActivityConstans.swift */; };
+		E3D1CA882ACDC4FC00190621 /* SoundConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CA872ACDC4FC00190621 /* SoundConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		E3D1CA7B2ACABD1300190621 /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		E3D1CA7D2ACB05AB00190621 /* TimeOfDayIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOfDayIcon.swift; sourceTree = "<group>"; };
 		E3D1CA7F2ACB067100190621 /* Time&DateSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Time&DateSupport.swift"; sourceTree = "<group>"; };
+		E3D1CA812ACC875A00190621 /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
+		E3D1CA832ACC8C4A00190621 /* AlarmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmModel.swift; sourceTree = "<group>"; };
+		E3D1CA852ACDC47300190621 /* ActivityConstans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityConstans.swift; sourceTree = "<group>"; };
+		E3D1CA872ACDC4FC00190621 /* SoundConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +99,8 @@
 		E328A1652ACA0A1900B3E3B6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E3D1CA812ACC875A00190621 /* TimeModel.swift */,
+				E3D1CA832ACC8C4A00190621 /* AlarmModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -117,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				E3D1CA7B2ACABD1300190621 /* ColorConstants.swift */,
+				E3D1CA852ACDC47300190621 /* ActivityConstans.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -146,6 +157,7 @@
 		E328A16C2ACA0A9200B3E3B6 /* Sound */ = {
 			isa = PBXGroup;
 			children = (
+				E3D1CA872ACDC4FC00190621 /* SoundConstants.swift */,
 			);
 			path = Sound;
 			sourceTree = "<group>";
@@ -253,8 +265,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E328A15A2ACA09FF00B3E3B6 /* ContentView.swift in Sources */,
+				E3D1CA842ACC8C4A00190621 /* AlarmModel.swift in Sources */,
+				E3D1CA862ACDC47300190621 /* ActivityConstans.swift in Sources */,
+				E3D1CA882ACDC4FC00190621 /* SoundConstants.swift in Sources */,
 				E328A1582ACA09FF00B3E3B6 /* alarmAppApp.swift in Sources */,
 				E328A1912ACA1A7D00B3E3B6 /* GrayTextView.swift in Sources */,
+				E3D1CA822ACC875A00190621 /* TimeModel.swift in Sources */,
 				E3D1CA7C2ACABD1300190621 /* ColorConstants.swift in Sources */,
 				E3D1CA802ACB067100190621 /* Time&DateSupport.swift in Sources */,
 				E3D1CA7E2ACB05AB00190621 /* TimeOfDayIcon.swift in Sources */,
