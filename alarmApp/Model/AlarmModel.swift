@@ -14,20 +14,29 @@ struct AlarmModel: Identifiable {
     var start: Date // The start time of the alarm
     var end: Date // The end time of the alarm
     
-    var activity: String // An associated activity or icon for the alarm
-    var colorIndex: Int // Index representing the color associated with the alarm
-    var activityColor: Color { // Compute the associated color using colorIndex
+    // An associated activity or icon for the alarm
+    var activity: String
+    
+    // Index representing the color associated with the alarm
+    var colorIndex: Int
+    
+    // Compute the associated color using colorIndex
+    var activityColor: Color {
         mainColors[colorIndex]
     }
     
-    var timeInterval: TimeInterval { // Calculate the duration of the alarm
+    // Calculate the duration of the alarm
+    var timeInterval: TimeInterval {
         end - start
     }
     
-    var startTime: TimeModel { // Convert the start time to a TimeModel
+    // Convert the start time to a TimeModel
+    var startTime: TimeModel {
         dateToTimeModel(date: start)
     }
-    var endTime: TimeModel { // Convert the end time to a TimeModel
+    
+    // Convert the end time to a TimeModel
+    var endTime: TimeModel {
         dateToTimeModel(date: end)
     }
     
@@ -52,6 +61,7 @@ struct AlarmModel: Identifiable {
             AlarmModel(title: "456", body: "89", repeats: true, sound: .wake_up, alarmEnabled: false, start: Date(), end: addHourToDate(date: Date(), numHours: 0, numMinutes:  5), activity: "moon.fill", colorIndex: 0),
             AlarmModel(title: "erg", body: "wrgsdg", repeats: true, sound: .wake_up, alarmEnabled: true, start: Date(), end: addHourToDate(date: Date(), numHours: 5, numMinutes:  5), activity: "sunrise.fill", colorIndex: 3)
         ]
-            .sorted(by: {$0.endTime < $1.endTime}) // Sort alarms by end time
+            // Sort alarms by end time
+            .sorted(by: {$0.endTime < $1.endTime})
     }
 }

@@ -4,7 +4,7 @@ import SwiftUI
 struct alarmAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashScreenView()
         }
     }
 }
