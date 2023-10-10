@@ -5,7 +5,7 @@ struct CustomFont: View {
     // Custom font name
     let fontName = "Track drift"
     // Text to be displayed
-    let text: String
+    let text: LocalizedStringKey
     // Font size
     let size: CGFloat
     

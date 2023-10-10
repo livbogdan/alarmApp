@@ -1,9 +1,5 @@
 import SwiftUI
 
-// Get the screen dimensions
-let screenWidth = UIScreen.main.bounds.width
-let screenHeight = UIScreen.main.bounds.height
-
 // Represents a view with a colored circle
 struct CircleView: View {
     let radius: CGFloat
@@ -12,8 +8,11 @@ struct CircleView: View {
     
     var body: some View {
         Circle()
-            .fill(LinearGradient(colors: [color1, color2], startPoint: .top, endPoint: .bottom)) // Gradient-filled circle
-            .frame(width: radius, height: radius) // Set the frame size
+            .fill(LinearGradient(colors: [color1, color2],
+                                 startPoint: .top,
+                                 endPoint: .bottom)) // Gradient-filled circle
+            .frame(width: radius,
+                   height: radius) // Set the frame size
     }
 }
 

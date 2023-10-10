@@ -26,6 +26,22 @@
 		E3D1CA912AD1849D00190621 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CA902AD1849D00190621 /* CustomFont.swift */; };
 		E3D1CA932AD30CFF00190621 /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CA922AD30CFF00190621 /* ImageConstants.swift */; };
 		E3D1CA972AD34E5200190621 /* Alcatraz.otf in Resources */ = {isa = PBXBuildFile; fileRef = E3D1CA962AD34E5200190621 /* Alcatraz.otf */; };
+		E3D1CA9B2AD3614D00190621 /* EnableNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CA9A2AD3614D00190621 /* EnableNotifications.swift */; };
+		E3D1CA9D2AD364C500190621 /* MainGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CA9C2AD364C500190621 /* MainGradient.swift */; };
+		E3D1CA9F2AD365E800190621 /* ScreenConstans.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CA9E2AD365E800190621 /* ScreenConstans.swift */; };
+		E3D1CAA12AD36A8200190621 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAA02AD36A8200190621 /* ButtonView.swift */; };
+		E3D1CAA32AD4323E00190621 /* AddEditAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAA22AD4323E00190621 /* AddEditAlarmView.swift */; };
+		E3D1CAA52AD43C1F00190621 /* AlarmManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAA42AD43C1F00190621 /* AlarmManageView.swift */; };
+		E3D1CAA72AD446E900190621 /* AddSaveMangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAA62AD446E900190621 /* AddSaveMangeView.swift */; };
+		E3D1CAA92AD5BE2A00190621 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3D1CAA82AD5BE2A00190621 /* GoogleService-Info.plist */; };
+		E3D1CAAC2AD5BF2A00190621 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E3D1CAAB2AD5BF2A00190621 /* FirebaseAnalytics */; };
+		E3D1CAAE2AD5BF2A00190621 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E3D1CAAD2AD5BF2A00190621 /* FirebaseAuth */; };
+		E3D1CAB02AD5BF2A00190621 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E3D1CAAF2AD5BF2A00190621 /* FirebaseFirestore */; };
+		E3D1CAB22AD5BF2A00190621 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E3D1CAB12AD5BF2A00190621 /* FirebaseFirestoreSwift */; };
+		E3D1CAB42AD5BF2A00190621 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = E3D1CAB32AD5BF2A00190621 /* FirebaseStorage */; };
+		E3D1CAB62AD5C1AA00190621 /* CancelSaveAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAB52AD5C1AA00190621 /* CancelSaveAlarm.swift */; };
+		E3D1CAB82AD5C3D000190621 /* AlarmToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAB72AD5C3D000190621 /* AlarmToggleView.swift */; };
+		E3D1CABA2AD5C4B400190621 /* TheToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAB92AD5C4B400190621 /* TheToggleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +68,17 @@
 		E3D1CA922AD30CFF00190621 /* ImageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstants.swift; sourceTree = "<group>"; };
 		E3D1CA942AD34A5300190621 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E3D1CA962AD34E5200190621 /* Alcatraz.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Alcatraz.otf; sourceTree = "<group>"; };
+		E3D1CA9A2AD3614D00190621 /* EnableNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableNotifications.swift; sourceTree = "<group>"; };
+		E3D1CA9C2AD364C500190621 /* MainGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGradient.swift; sourceTree = "<group>"; };
+		E3D1CA9E2AD365E800190621 /* ScreenConstans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenConstans.swift; sourceTree = "<group>"; };
+		E3D1CAA02AD36A8200190621 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		E3D1CAA22AD4323E00190621 /* AddEditAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditAlarmView.swift; sourceTree = "<group>"; };
+		E3D1CAA42AD43C1F00190621 /* AlarmManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmManageView.swift; sourceTree = "<group>"; };
+		E3D1CAA62AD446E900190621 /* AddSaveMangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSaveMangeView.swift; sourceTree = "<group>"; };
+		E3D1CAA82AD5BE2A00190621 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E3D1CAB52AD5C1AA00190621 /* CancelSaveAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelSaveAlarm.swift; sourceTree = "<group>"; };
+		E3D1CAB72AD5C3D000190621 /* AlarmToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmToggleView.swift; sourceTree = "<group>"; };
+		E3D1CAB92AD5C4B400190621 /* TheToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheToggleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +86,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3D1CAAC2AD5BF2A00190621 /* FirebaseAnalytics in Frameworks */,
+				E3D1CAAE2AD5BF2A00190621 /* FirebaseAuth in Frameworks */,
+				E3D1CAB02AD5BF2A00190621 /* FirebaseFirestore in Frameworks */,
+				E3D1CAB42AD5BF2A00190621 /* FirebaseStorage in Frameworks */,
+				E3D1CAB22AD5BF2A00190621 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +116,7 @@
 		E328A1562ACA09FF00B3E3B6 /* alarmApp */ = {
 			isa = PBXGroup;
 			children = (
+				E3D1CAA82AD5BE2A00190621 /* GoogleService-Info.plist */,
 				E3D1CA942AD34A5300190621 /* Info.plist */,
 				E328A16C2ACA0A9200B3E3B6 /* Sound */,
 				E328A16B2ACA0A7F00B3E3B6 /* Notification */,
@@ -139,9 +172,11 @@
 		E328A1682ACA0A4F00B3E3B6 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				E3D1CA872ACDC4FC00190621 /* SoundConstants.swift */,
 				E3D1CA7B2ACABD1300190621 /* ColorConstants.swift */,
 				E3D1CA852ACDC47300190621 /* ActivityConstans.swift */,
 				E3D1CA922AD30CFF00190621 /* ImageConstants.swift */,
+				E3D1CA9E2AD365E800190621 /* ScreenConstans.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -173,7 +208,6 @@
 		E328A16C2ACA0A9200B3E3B6 /* Sound */ = {
 			isa = PBXGroup;
 			children = (
-				E3D1CA872ACDC4FC00190621 /* SoundConstants.swift */,
 			);
 			path = Sound;
 			sourceTree = "<group>";
@@ -183,6 +217,7 @@
 			children = (
 				E328A1592ACA09FF00B3E3B6 /* MainAlarmView.swift */,
 				E3D1CA892ACDE66700190621 /* SplashScreenView.swift */,
+				E3D1CAA22AD4323E00190621 /* AddEditAlarmView.swift */,
 			);
 			path = "Main Views";
 			sourceTree = "<group>";
@@ -190,6 +225,9 @@
 		E328A16E2ACA0AC800B3E3B6 /* Sub Views */ = {
 			isa = PBXGroup;
 			children = (
+				E3D1CA9A2AD3614D00190621 /* EnableNotifications.swift */,
+				E3D1CAA42AD43C1F00190621 /* AlarmManageView.swift */,
+				E3D1CAA62AD446E900190621 /* AddSaveMangeView.swift */,
 			);
 			path = "Sub Views";
 			sourceTree = "<group>";
@@ -201,6 +239,11 @@
 				E3D1CA7D2ACB05AB00190621 /* TimeOfDayIcon.swift */,
 				E3D1CA8B2AD08A2900190621 /* FourGradientCircles.swift */,
 				E3D1CA902AD1849D00190621 /* CustomFont.swift */,
+				E3D1CA9C2AD364C500190621 /* MainGradient.swift */,
+				E3D1CAA02AD36A8200190621 /* ButtonView.swift */,
+				E3D1CAB52AD5C1AA00190621 /* CancelSaveAlarm.swift */,
+				E3D1CAB72AD5C3D000190621 /* AlarmToggleView.swift */,
+				E3D1CAB92AD5C4B400190621 /* TheToggleView.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -228,6 +271,13 @@
 			dependencies = (
 			);
 			name = alarmApp;
+			packageProductDependencies = (
+				E3D1CAAB2AD5BF2A00190621 /* FirebaseAnalytics */,
+				E3D1CAAD2AD5BF2A00190621 /* FirebaseAuth */,
+				E3D1CAAF2AD5BF2A00190621 /* FirebaseFirestore */,
+				E3D1CAB12AD5BF2A00190621 /* FirebaseFirestoreSwift */,
+				E3D1CAB32AD5BF2A00190621 /* FirebaseStorage */,
+			);
 			productName = alarmApp;
 			productReference = E328A1542ACA09FF00B3E3B6 /* alarmApp.app */;
 			productType = "com.apple.product-type.application";
@@ -257,6 +307,9 @@
 				ru,
 			);
 			mainGroup = E328A14B2ACA09FF00B3E3B6;
+			packageReferences = (
+				E3D1CAAA2AD5BF2A00190621 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = E328A1552ACA09FF00B3E3B6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -276,6 +329,7 @@
 				E3D1CA972AD34E5200190621 /* Alcatraz.otf in Resources */,
 				E3D1CA8E2AD1844400190621 /* TrackdriftRegular.ttf in Resources */,
 				E328A15C2ACA0A0100B3E3B6 /* Assets.xcassets in Resources */,
+				E3D1CAA92AD5BE2A00190621 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,20 +340,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3D1CA9D2AD364C500190621 /* MainGradient.swift in Sources */,
 				E328A15A2ACA09FF00B3E3B6 /* MainAlarmView.swift in Sources */,
 				E3D1CA842ACC8C4A00190621 /* AlarmModel.swift in Sources */,
 				E3D1CA862ACDC47300190621 /* ActivityConstans.swift in Sources */,
+				E3D1CABA2AD5C4B400190621 /* TheToggleView.swift in Sources */,
 				E3D1CA912AD1849D00190621 /* CustomFont.swift in Sources */,
+				E3D1CAB82AD5C3D000190621 /* AlarmToggleView.swift in Sources */,
+				E3D1CAA52AD43C1F00190621 /* AlarmManageView.swift in Sources */,
 				E3D1CA882ACDC4FC00190621 /* SoundConstants.swift in Sources */,
 				E3D1CA8A2ACDE66700190621 /* SplashScreenView.swift in Sources */,
 				E328A1582ACA09FF00B3E3B6 /* alarmAppApp.swift in Sources */,
+				E3D1CAA12AD36A8200190621 /* ButtonView.swift in Sources */,
 				E3D1CA932AD30CFF00190621 /* ImageConstants.swift in Sources */,
+				E3D1CAB62AD5C1AA00190621 /* CancelSaveAlarm.swift in Sources */,
 				E328A1912ACA1A7D00B3E3B6 /* GrayTextView.swift in Sources */,
 				E3D1CA822ACC875A00190621 /* TimeModel.swift in Sources */,
+				E3D1CAA72AD446E900190621 /* AddSaveMangeView.swift in Sources */,
 				E3D1CA7C2ACABD1300190621 /* ColorConstants.swift in Sources */,
+				E3D1CA9B2AD3614D00190621 /* EnableNotifications.swift in Sources */,
 				E3D1CA802ACB067100190621 /* Time&DateSupport.swift in Sources */,
 				E3D1CA7E2ACB05AB00190621 /* TimeOfDayIcon.swift in Sources */,
+				E3D1CA9F2AD365E800190621 /* ScreenConstans.swift in Sources */,
 				E3D1CA8C2AD08A2900190621 /* FourGradientCircles.swift in Sources */,
+				E3D1CAA32AD4323E00190621 /* AddEditAlarmView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +433,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -423,7 +487,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -513,6 +577,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E3D1CAAA2AD5BF2A00190621 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E3D1CAAB2AD5BF2A00190621 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3D1CAAA2AD5BF2A00190621 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		E3D1CAAD2AD5BF2A00190621 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3D1CAAA2AD5BF2A00190621 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		E3D1CAAF2AD5BF2A00190621 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3D1CAAA2AD5BF2A00190621 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		E3D1CAB12AD5BF2A00190621 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3D1CAAA2AD5BF2A00190621 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		E3D1CAB32AD5BF2A00190621 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3D1CAAA2AD5BF2A00190621 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E328A14C2ACA09FF00B3E3B6 /* Project object */;
 }
