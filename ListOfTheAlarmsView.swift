@@ -1,4 +1,3 @@
-
 import SwiftUI
 
 // Define a SwiftUI view called ListOfTheAlarmsView
@@ -24,12 +23,7 @@ struct ListOfTheAlarmsView: View {
                             
                         }, label: {
                             HStack {
-                                // Display an image and text for each alarm
-                                Image(systemName: alarmModel.activity)
-                                    .foregroundColor(alarmModel.activityColor)
-                                
-                                //AlarmRowMenu()
-                                Text("Alarm row view - Edit me")
+                                AlarmRowMenu(model: alarmModel, i: i) // Display the alarm row menu
                             }
                         })
                     }
@@ -37,7 +31,7 @@ struct ListOfTheAlarmsView: View {
                 
                 // Display four gradient circles with reduced opacity
                 FourGradientCircles()
-                    .opacity(0.3)
+                    .opacity(0.1) // Set the opacity of the gradient circles
             }
                 .navigationTitle("Alarm List") // Set the navigation title
                 .toolbar {
@@ -47,16 +41,16 @@ struct ListOfTheAlarmsView: View {
                             // Display the AddEditAlarmView with a new alarm
                             AddEditAlarmView(currentAlramIndex: nil, alarmModel: .DefaultAlarm())
                         }, label: {
-                            Text("+")
-                                .font(.largeTitle)
+                            Text("Add") // Comment: Label for the button to add a new alarm
+                                ///.font(.largeTitle)
                                 .fontWeight(.semibold)
-                                .foregroundColor(gray) // Assuming 'gray' is defined somewhere
+                                ///.foregroundColor(gray) // Assuming 'gray' is defined somewhere
                         })
                     }
                     
                     // Add an edit button to edit the list
                     ToolbarItem(placement: .navigationBarLeading) {
-                        EditButton()
+                        EditButton() // Add an edit button to allow list editing
                     }
                 }
         }
