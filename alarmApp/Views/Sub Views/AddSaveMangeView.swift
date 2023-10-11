@@ -7,9 +7,10 @@ struct AddSaveMangeView: View {
     
     var body: some View {
         VStack {
-            Text("Cancel/Save alarm") // Display text for canceling or saving an alarm
+
             CancelSaveAlarm(currenAlarmIndex: currentAlramIndex, alarmModel: $alarmModel) // Display CancelSaveAlarm view
-            Text("Toogle Alarm") // Display text for toggling the alarm
+            //Text("Toogle Alarm") // Display text for toggling the alarm
+            AlarmToggleView(alarmEnable: $alarmModel.alarmEnabled)
             
             Divider() // Add a divider
             
@@ -19,8 +20,11 @@ struct AddSaveMangeView: View {
                         TimeOfDayIcon(date: alarmModel.start)
                             .font(.largeTitle) // Display the start time of the alarm
                         VStack(alignment: .leading) {
-                            GrayTextView(text: "Start") // Display "Start" label
-                            Text("TimePicker") // Display "TimePicker" (placeholder text)
+                            // Display "Start" label
+                            GrayTextView(text: "Start")
+                            
+                            // Display the TimePicker for selecting the alarm's start time
+                            TimePicker(time: $alarmModel.start, scale: 1.3)
                         }
                     }
                     
@@ -51,10 +55,11 @@ struct AddSaveMangeView: View {
                     }
                     
                     GridRow {
-                        TimeOfDayIcon(date: alarmModel.start)
+                        TimeOfDayIcon(date: alarmModel.end)
                             .font(.largeTitle) // Display the end time of the alarm
                         VStack(alignment: .leading) {
-                            Text("TimePicker") // Display "TimePicker" (placeholder text)
+                            // Display the TimePicker for selecting the alarm's start time
+                            TimePicker(time: $alarmModel.end, scale: 1.3)
                             GrayTextView(text: "End") // Display "End" label
                         }
                     }

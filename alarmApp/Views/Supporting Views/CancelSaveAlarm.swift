@@ -19,6 +19,7 @@ struct CancelSaveAlarm: View {
                 }
             }, label: {Text("Save")}) // Display a "Save" button
         }
+        .padding()
     }
 }
 

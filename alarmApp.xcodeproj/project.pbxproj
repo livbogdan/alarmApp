@@ -42,6 +42,7 @@
 		E3D1CAB62AD5C1AA00190621 /* CancelSaveAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAB52AD5C1AA00190621 /* CancelSaveAlarm.swift */; };
 		E3D1CAB82AD5C3D000190621 /* AlarmToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAB72AD5C3D000190621 /* AlarmToggleView.swift */; };
 		E3D1CABA2AD5C4B400190621 /* TheToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAB92AD5C4B400190621 /* TheToggleView.swift */; };
+		E3D1CABC2AD600C600190621 /* TimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CABB2AD600C600190621 /* TimePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,7 @@
 		E3D1CAB52AD5C1AA00190621 /* CancelSaveAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelSaveAlarm.swift; sourceTree = "<group>"; };
 		E3D1CAB72AD5C3D000190621 /* AlarmToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmToggleView.swift; sourceTree = "<group>"; };
 		E3D1CAB92AD5C4B400190621 /* TheToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheToggleView.swift; sourceTree = "<group>"; };
+		E3D1CABB2AD600C600190621 /* TimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +246,7 @@
 				E3D1CAB52AD5C1AA00190621 /* CancelSaveAlarm.swift */,
 				E3D1CAB72AD5C3D000190621 /* AlarmToggleView.swift */,
 				E3D1CAB92AD5C4B400190621 /* TheToggleView.swift */,
+				E3D1CABB2AD600C600190621 /* TimePicker.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				E328A15A2ACA09FF00B3E3B6 /* MainAlarmView.swift in Sources */,
 				E3D1CA842ACC8C4A00190621 /* AlarmModel.swift in Sources */,
 				E3D1CA862ACDC47300190621 /* ActivityConstans.swift in Sources */,
+				E3D1CABC2AD600C600190621 /* TimePicker.swift in Sources */,
 				E3D1CABA2AD5C4B400190621 /* TheToggleView.swift in Sources */,
 				E3D1CA912AD1849D00190621 /* CustomFont.swift in Sources */,
 				E3D1CAB82AD5C3D000190621 /* AlarmToggleView.swift in Sources */,
