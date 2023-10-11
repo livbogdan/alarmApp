@@ -2,13 +2,13 @@ import SwiftUI
 
 struct MainAlarmView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            //AddSaveMangeView(currentAlramIndex: nil, alarmModel: .DefaultAlarm())
+            ListOfTheAlarmsView(alarmViewModel: AlarmModel.DummyAlarmDate())
+                .tabItem({
+                    Label("Alarms", systemImage: "alarm.fill")
+                })
         }
-        .padding()
     }
 }
 

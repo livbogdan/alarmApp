@@ -44,6 +44,8 @@
 		E3D1CABA2AD5C4B400190621 /* TheToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAB92AD5C4B400190621 /* TheToggleView.swift */; };
 		E3D1CABC2AD600C600190621 /* TimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CABB2AD600C600190621 /* TimePicker.swift */; };
 		E3D1CABE2AD62B3A00190621 /* SelectActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CABD2AD62B3A00190621 /* SelectActivityView.swift */; };
+		E3D1CAC02AD649D100190621 /* ListOfTheAlarmsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CABF2AD649D100190621 /* ListOfTheAlarmsView.swift */; };
+		E3D1CAC22AD7049300190621 /* AlarmRowMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAC12AD7049300190621 /* AlarmRowMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +85,8 @@
 		E3D1CAB92AD5C4B400190621 /* TheToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheToggleView.swift; sourceTree = "<group>"; };
 		E3D1CABB2AD600C600190621 /* TimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePicker.swift; sourceTree = "<group>"; };
 		E3D1CABD2AD62B3A00190621 /* SelectActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectActivityView.swift; sourceTree = "<group>"; };
+		E3D1CABF2AD649D100190621 /* ListOfTheAlarmsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfTheAlarmsView.swift; sourceTree = "<group>"; };
+		E3D1CAC12AD7049300190621 /* AlarmRowMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmRowMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 		E328A14B2ACA09FF00B3E3B6 = {
 			isa = PBXGroup;
 			children = (
+				E3D1CABF2AD649D100190621 /* ListOfTheAlarmsView.swift */,
 				E328A1562ACA09FF00B3E3B6 /* alarmApp */,
 				E328A1552ACA09FF00B3E3B6 /* Products */,
 			);
@@ -250,6 +255,7 @@
 				E3D1CAB92AD5C4B400190621 /* TheToggleView.swift */,
 				E3D1CABB2AD600C600190621 /* TimePicker.swift */,
 				E3D1CABD2AD62B3A00190621 /* SelectActivityView.swift */,
+				E3D1CAC12AD7049300190621 /* AlarmRowMenu.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -353,8 +359,10 @@
 				E3D1CABC2AD600C600190621 /* TimePicker.swift in Sources */,
 				E3D1CABA2AD5C4B400190621 /* TheToggleView.swift in Sources */,
 				E3D1CA912AD1849D00190621 /* CustomFont.swift in Sources */,
+				E3D1CAC22AD7049300190621 /* AlarmRowMenu.swift in Sources */,
 				E3D1CAB82AD5C3D000190621 /* AlarmToggleView.swift in Sources */,
 				E3D1CAA52AD43C1F00190621 /* AlarmManageView.swift in Sources */,
+				E3D1CAC02AD649D100190621 /* ListOfTheAlarmsView.swift in Sources */,
 				E3D1CA882ACDC4FC00190621 /* SoundConstants.swift in Sources */,
 				E3D1CA8A2ACDE66700190621 /* SplashScreenView.swift in Sources */,
 				E328A1582ACA09FF00B3E3B6 /* alarmAppApp.swift in Sources */,
