@@ -38,10 +38,12 @@ struct AddSaveMangeView: View {
                     }
                     
                     GridRow {
+                        // Display the selected activity icon
                         Image(systemName: alarmModel.activity)
                             .foregroundColor(alarmModel.activityColor)
-                            .font(.largeTitle) // Display the selected activity icon
-                        Text("Select Activity View") // Display text for selecting an activity
+                            .font(.largeTitle)
+                        SelectActivityView(currentColorIndex: $alarmModel.colorIndex,
+                                           currentActivity: $alarmModel.activity)
                     }
                     .padding(.vertical)
                     
@@ -58,9 +60,9 @@ struct AddSaveMangeView: View {
                         TimeOfDayIcon(date: alarmModel.end)
                             .font(.largeTitle) // Display the end time of the alarm
                         VStack(alignment: .leading) {
+                            GrayTextView(text: "End") // Display "End" label
                             // Display the TimePicker for selecting the alarm's start time
                             TimePicker(time: $alarmModel.end, scale: 1.3)
-                            GrayTextView(text: "End") // Display "End" label
                         }
                     }
                     

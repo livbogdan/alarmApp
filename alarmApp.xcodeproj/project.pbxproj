@@ -43,6 +43,7 @@
 		E3D1CAB82AD5C3D000190621 /* AlarmToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAB72AD5C3D000190621 /* AlarmToggleView.swift */; };
 		E3D1CABA2AD5C4B400190621 /* TheToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAB92AD5C4B400190621 /* TheToggleView.swift */; };
 		E3D1CABC2AD600C600190621 /* TimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CABB2AD600C600190621 /* TimePicker.swift */; };
+		E3D1CABE2AD62B3A00190621 /* SelectActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CABD2AD62B3A00190621 /* SelectActivityView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		E3D1CAB72AD5C3D000190621 /* AlarmToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmToggleView.swift; sourceTree = "<group>"; };
 		E3D1CAB92AD5C4B400190621 /* TheToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheToggleView.swift; sourceTree = "<group>"; };
 		E3D1CABB2AD600C600190621 /* TimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePicker.swift; sourceTree = "<group>"; };
+		E3D1CABD2AD62B3A00190621 /* SelectActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectActivityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +249,7 @@
 				E3D1CAB72AD5C3D000190621 /* AlarmToggleView.swift */,
 				E3D1CAB92AD5C4B400190621 /* TheToggleView.swift */,
 				E3D1CABB2AD600C600190621 /* TimePicker.swift */,
+				E3D1CABD2AD62B3A00190621 /* SelectActivityView.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				E3D1CAA12AD36A8200190621 /* ButtonView.swift in Sources */,
 				E3D1CA932AD30CFF00190621 /* ImageConstants.swift in Sources */,
 				E3D1CAB62AD5C1AA00190621 /* CancelSaveAlarm.swift in Sources */,
+				E3D1CABE2AD62B3A00190621 /* SelectActivityView.swift in Sources */,
 				E328A1912ACA1A7D00B3E3B6 /* GrayTextView.swift in Sources */,
 				E3D1CA822ACC875A00190621 /* TimeModel.swift in Sources */,
 				E3D1CAA72AD446E900190621 /* AddSaveMangeView.swift in Sources */,
