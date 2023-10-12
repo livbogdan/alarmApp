@@ -49,6 +49,9 @@
 		E3D1CAC42AD85B0800190621 /* AddEditCircularAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAC32AD85B0800190621 /* AddEditCircularAlarmView.swift */; };
 		E3D1CAC62AD85D5500190621 /* CircularTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAC52AD85D5500190621 /* CircularTimeView.swift */; };
 		E3D1CAC92AD8635000190621 /* CenteralDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAC82AD8635000190621 /* CenteralDatePickerView.swift */; };
+		E3D1CACB2AD877C300190621 /* TimeArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CACA2AD877C300190621 /* TimeArcView.swift */; };
+		E3D1CACD2AD8A27700190621 /* CircularTimeIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CACC2AD8A27700190621 /* CircularTimeIcon.swift */; };
+		E3D1CACF2AD8A81800190621 /* MainAddEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CACE2AD8A81800190621 /* MainAddEditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +96,9 @@
 		E3D1CAC32AD85B0800190621 /* AddEditCircularAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditCircularAlarmView.swift; sourceTree = "<group>"; };
 		E3D1CAC52AD85D5500190621 /* CircularTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTimeView.swift; sourceTree = "<group>"; };
 		E3D1CAC82AD8635000190621 /* CenteralDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenteralDatePickerView.swift; sourceTree = "<group>"; };
+		E3D1CACA2AD877C300190621 /* TimeArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeArcView.swift; sourceTree = "<group>"; };
+		E3D1CACC2AD8A27700190621 /* CircularTimeIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTimeIcon.swift; sourceTree = "<group>"; };
+		E3D1CACE2AD8A81800190621 /* MainAddEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAddEditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +240,7 @@
 				E3D1CA892ACDE66700190621 /* SplashScreenView.swift */,
 				E3D1CAA22AD4323E00190621 /* AddEditAlarmView.swift */,
 				E3D1CAC32AD85B0800190621 /* AddEditCircularAlarmView.swift */,
+				E3D1CACE2AD8A81800190621 /* MainAddEditView.swift */,
 			);
 			path = "Main Views";
 			sourceTree = "<group>";
@@ -280,6 +287,8 @@
 			children = (
 				E3D1CAC52AD85D5500190621 /* CircularTimeView.swift */,
 				E3D1CAC82AD8635000190621 /* CenteralDatePickerView.swift */,
+				E3D1CACA2AD877C300190621 /* TimeArcView.swift */,
+				E3D1CACC2AD8A27700190621 /* CircularTimeIcon.swift */,
 			);
 			path = "Circular Time View";
 			sourceTree = "<group>";
@@ -381,6 +390,7 @@
 				E3D1CAC42AD85B0800190621 /* AddEditCircularAlarmView.swift in Sources */,
 				E3D1CAC22AD7049300190621 /* AlarmRowMenu.swift in Sources */,
 				E3D1CAB82AD5C3D000190621 /* AlarmToggleView.swift in Sources */,
+				E3D1CACB2AD877C300190621 /* TimeArcView.swift in Sources */,
 				E3D1CAA52AD43C1F00190621 /* AlarmManageView.swift in Sources */,
 				E3D1CAC02AD649D100190621 /* ListOfTheAlarmsView.swift in Sources */,
 				E3D1CA882ACDC4FC00190621 /* SoundConstants.swift in Sources */,
@@ -388,8 +398,10 @@
 				E328A1582ACA09FF00B3E3B6 /* alarmAppApp.swift in Sources */,
 				E3D1CAA12AD36A8200190621 /* ButtonView.swift in Sources */,
 				E3D1CA932AD30CFF00190621 /* ImageConstants.swift in Sources */,
+				E3D1CACD2AD8A27700190621 /* CircularTimeIcon.swift in Sources */,
 				E3D1CAB62AD5C1AA00190621 /* CancelSaveAlarm.swift in Sources */,
 				E3D1CABE2AD62B3A00190621 /* SelectActivityView.swift in Sources */,
+				E3D1CACF2AD8A81800190621 /* MainAddEditView.swift in Sources */,
 				E328A1912ACA1A7D00B3E3B6 /* GrayTextView.swift in Sources */,
 				E3D1CA822ACC875A00190621 /* TimeModel.swift in Sources */,
 				E3D1CAA72AD446E900190621 /* AddSaveMangeView.swift in Sources */,

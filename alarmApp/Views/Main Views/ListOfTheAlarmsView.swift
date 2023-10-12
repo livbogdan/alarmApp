@@ -20,7 +20,7 @@ struct ListOfTheAlarmsView: View {
                         // Create a navigation link to edit individual alarms
                         NavigationLink(destination: {
                             // Display the AddEditAlarmView with parameters
-                            AddEditAlarmView(currentAlramIndex: i, alarmModel: alarmModel)
+                            MainAddEditView(currentAlarmIndex: i, alarmModel: alarmModel)
                             
                         }, label: {
                             HStack {
@@ -40,7 +40,7 @@ struct ListOfTheAlarmsView: View {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         NavigationLink(destination: {
                             // Display the AddEditAlarmView with a new alarm
-                            AddEditAlarmView(currentAlramIndex: nil, alarmModel: .DefaultAlarm())
+                            MainAddEditView(currentAlarmIndex: nil, alarmModel: .DefaultAlarm())
                         }, label: {
                             Text("Add") // Comment: Label for the button to add a new alarm
                                 ///.font(.largeTitle)
