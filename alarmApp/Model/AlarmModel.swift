@@ -57,9 +57,9 @@ struct AlarmModel: Identifiable {
     static func DummyAlarmDate() -> [AlarmModel] {
         [
             // Sample alarm instances
-            AlarmModel(title: "123", body: "qwe", repeats: false, sound: .wake_up, alarmEnabled: true, start: Date(), end: addHourToDate(date: Date(), numHours: 3, numMinutes:  10), activity: "moon.zzz.fill", colorIndex: 2),
-            AlarmModel(title: "456", body: "89", repeats: true, sound: .wake_up, alarmEnabled: false, start: Date(), end: addHourToDate(date: Date(), numHours: 0, numMinutes:  5), activity: "moon.fill", colorIndex: 0),
-            AlarmModel(title: "erg", body: "wrgsdg", repeats: true, sound: .wake_up, alarmEnabled: true, start: Date(), end: addHourToDate(date: Date(), numHours: 5, numMinutes:  5), activity: "sunrise.fill", colorIndex: 3)
+            AlarmModel(title: "Titel1", body: "body1", repeats: false, sound: .wake_up, alarmEnabled: true, start: Date(), end: addHourToDate(date: Date(), numHours: 3, numMinutes:  10), activity: "moon.zzz.fill", colorIndex: 2),
+            AlarmModel(title: "Titel2", body: "body2", repeats: true, sound: .wake_up, alarmEnabled: false, start: Date(), end: addHourToDate(date: Date(), numHours: 0, numMinutes:  5), activity: "moon.fill", colorIndex: 0),
+            AlarmModel(title: "Titel3", body: "body3", repeats: true, sound: .wake_up, alarmEnabled: true, start: Date(), end: addHourToDate(date: Date(), numHours: 5, numMinutes:  5), activity: "sunrise.fill", colorIndex: 3)
         ]
             // Sort alarms by end time
             .sorted(by: {$0.endTime < $1.endTime})

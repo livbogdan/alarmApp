@@ -46,6 +46,9 @@
 		E3D1CABE2AD62B3A00190621 /* SelectActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CABD2AD62B3A00190621 /* SelectActivityView.swift */; };
 		E3D1CAC02AD649D100190621 /* ListOfTheAlarmsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CABF2AD649D100190621 /* ListOfTheAlarmsView.swift */; };
 		E3D1CAC22AD7049300190621 /* AlarmRowMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAC12AD7049300190621 /* AlarmRowMenu.swift */; };
+		E3D1CAC42AD85B0800190621 /* AddEditCircularAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAC32AD85B0800190621 /* AddEditCircularAlarmView.swift */; };
+		E3D1CAC62AD85D5500190621 /* CircularTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAC52AD85D5500190621 /* CircularTimeView.swift */; };
+		E3D1CAC92AD8635000190621 /* CenteralDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAC82AD8635000190621 /* CenteralDatePickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +90,9 @@
 		E3D1CABD2AD62B3A00190621 /* SelectActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectActivityView.swift; sourceTree = "<group>"; };
 		E3D1CABF2AD649D100190621 /* ListOfTheAlarmsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfTheAlarmsView.swift; sourceTree = "<group>"; };
 		E3D1CAC12AD7049300190621 /* AlarmRowMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmRowMenu.swift; sourceTree = "<group>"; };
+		E3D1CAC32AD85B0800190621 /* AddEditCircularAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditCircularAlarmView.swift; sourceTree = "<group>"; };
+		E3D1CAC52AD85D5500190621 /* CircularTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTimeView.swift; sourceTree = "<group>"; };
+		E3D1CAC82AD8635000190621 /* CenteralDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenteralDatePickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +114,6 @@
 		E328A14B2ACA09FF00B3E3B6 = {
 			isa = PBXGroup;
 			children = (
-				E3D1CABF2AD649D100190621 /* ListOfTheAlarmsView.swift */,
 				E328A1562ACA09FF00B3E3B6 /* alarmApp */,
 				E328A1552ACA09FF00B3E3B6 /* Products */,
 			);
@@ -224,9 +229,11 @@
 		E328A16D2ACA0AB900B3E3B6 /* Main Views */ = {
 			isa = PBXGroup;
 			children = (
+				E3D1CABF2AD649D100190621 /* ListOfTheAlarmsView.swift */,
 				E328A1592ACA09FF00B3E3B6 /* MainAlarmView.swift */,
 				E3D1CA892ACDE66700190621 /* SplashScreenView.swift */,
 				E3D1CAA22AD4323E00190621 /* AddEditAlarmView.swift */,
+				E3D1CAC32AD85B0800190621 /* AddEditCircularAlarmView.swift */,
 			);
 			path = "Main Views";
 			sourceTree = "<group>";
@@ -244,6 +251,7 @@
 		E328A16F2ACA0AD400B3E3B6 /* Supporting Views */ = {
 			isa = PBXGroup;
 			children = (
+				E3D1CAC72AD862E700190621 /* Circular Time View */,
 				E328A1902ACA1A7D00B3E3B6 /* GrayTextView.swift */,
 				E3D1CA7D2ACB05AB00190621 /* TimeOfDayIcon.swift */,
 				E3D1CA8B2AD08A2900190621 /* FourGradientCircles.swift */,
@@ -265,6 +273,15 @@
 			children = (
 			);
 			path = "Unused Views";
+			sourceTree = "<group>";
+		};
+		E3D1CAC72AD862E700190621 /* Circular Time View */ = {
+			isa = PBXGroup;
+			children = (
+				E3D1CAC52AD85D5500190621 /* CircularTimeView.swift */,
+				E3D1CAC82AD8635000190621 /* CenteralDatePickerView.swift */,
+			);
+			path = "Circular Time View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,13 +369,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3D1CAC62AD85D5500190621 /* CircularTimeView.swift in Sources */,
 				E3D1CA9D2AD364C500190621 /* MainGradient.swift in Sources */,
 				E328A15A2ACA09FF00B3E3B6 /* MainAlarmView.swift in Sources */,
 				E3D1CA842ACC8C4A00190621 /* AlarmModel.swift in Sources */,
 				E3D1CA862ACDC47300190621 /* ActivityConstans.swift in Sources */,
+				E3D1CAC92AD8635000190621 /* CenteralDatePickerView.swift in Sources */,
 				E3D1CABC2AD600C600190621 /* TimePicker.swift in Sources */,
 				E3D1CABA2AD5C4B400190621 /* TheToggleView.swift in Sources */,
 				E3D1CA912AD1849D00190621 /* CustomFont.swift in Sources */,
+				E3D1CAC42AD85B0800190621 /* AddEditCircularAlarmView.swift in Sources */,
 				E3D1CAC22AD7049300190621 /* AlarmRowMenu.swift in Sources */,
 				E3D1CAB82AD5C3D000190621 /* AlarmToggleView.swift in Sources */,
 				E3D1CAA52AD43C1F00190621 /* AlarmManageView.swift in Sources */,
