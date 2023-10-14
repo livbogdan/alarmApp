@@ -14,15 +14,15 @@ struct TimeOfDayIcon: View {
     var image: (name: String, color: Color){
         switch(hour) {
         case 6..<8:
-            return ("sunrise.fill", .orange)
+            return ("sunrise.fill", coral)
         case 8..<17:
-            return ("sun.max.fill", .yellow)
+            return ("sun.max.fill", yellow)
         case 17..<20:
-            return ("sun.and.horizon.fill", .pink)
+            return ("sun.and.horizon.fill", orange)
         case 20..<23:
-            return ("moon.fill", .black)
+            return ("moon.fill", gray)
         default:
-            return ("moon.stars.fill", .black)
+            return ("moon.stars.fill", black)
             
         }
     }
