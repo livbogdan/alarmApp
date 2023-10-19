@@ -19,6 +19,8 @@ struct AddEditCircularAlarmView: View {
             CircularTimeView(currentAlarmIndex: currentAlarmIndex, alarmModel: alarmModel, size: screenWidth / 2)
             
             Spacer() // Create another vertical spacer.
+            
+            SelectActivityViewExpanded(currentColorIndex: $alarmModel.colorIndex, currentActivity: $alarmModel.activity)
         }
     }
 }

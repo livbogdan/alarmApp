@@ -52,6 +52,7 @@
 		E3D1CACB2AD877C300190621 /* TimeArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CACA2AD877C300190621 /* TimeArcView.swift */; };
 		E3D1CACD2AD8A27700190621 /* CircularTimeIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CACC2AD8A27700190621 /* CircularTimeIcon.swift */; };
 		E3D1CACF2AD8A81800190621 /* MainAddEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CACE2AD8A81800190621 /* MainAddEditView.swift */; };
+		E3D1CAD12AE0A33D00190621 /* SelectActivityViewExpanded.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAD02AE0A33D00190621 /* SelectActivityViewExpanded.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		E3D1CACA2AD877C300190621 /* TimeArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeArcView.swift; sourceTree = "<group>"; };
 		E3D1CACC2AD8A27700190621 /* CircularTimeIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTimeIcon.swift; sourceTree = "<group>"; };
 		E3D1CACE2AD8A81800190621 /* MainAddEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAddEditView.swift; sourceTree = "<group>"; };
+		E3D1CAD02AE0A33D00190621 /* SelectActivityViewExpanded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectActivityViewExpanded.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +273,7 @@
 				E3D1CABB2AD600C600190621 /* TimePicker.swift */,
 				E3D1CABD2AD62B3A00190621 /* SelectActivityView.swift */,
 				E3D1CAC12AD7049300190621 /* AlarmRowMenu.swift */,
+				E3D1CAD02AE0A33D00190621 /* SelectActivityViewExpanded.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				E3D1CAB62AD5C1AA00190621 /* CancelSaveAlarm.swift in Sources */,
 				E3D1CABE2AD62B3A00190621 /* SelectActivityView.swift in Sources */,
 				E3D1CACF2AD8A81800190621 /* MainAddEditView.swift in Sources */,
+				E3D1CAD12AE0A33D00190621 /* SelectActivityViewExpanded.swift in Sources */,
 				E328A1912ACA1A7D00B3E3B6 /* GrayTextView.swift in Sources */,
 				E3D1CA822ACC875A00190621 /* TimeModel.swift in Sources */,
 				E3D1CAA72AD446E900190621 /* AddSaveMangeView.swift in Sources */,
