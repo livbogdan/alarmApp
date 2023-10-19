@@ -3,6 +3,7 @@ import SwiftUI
 // EnableNotifications is a view for enabling notifications.
 // TODO: Implement logic for enabling notifications.
 struct EnableNotifications: View {
+    @EnvironmentObject var lnManager: LocalNotificationManager
     var body: some View {
         ZStack {
             FourGradientCircles() // Display four gradient circles in the background
@@ -15,8 +16,9 @@ struct EnableNotifications: View {
                 
                 Spacer() // Create a space in the middle
                 
-                // TODO: Implement logic for enabling notifications
-                Button(action: {print("enable")}, label: {ButtonView(text: "Enable") // Display an "Enable" button
+                Button(action: {lnManager.openSettings()
+                    
+                }, label: {ButtonView(text: "Enable") // Display an "Enable" button
                         .padding() // Apply padding to the button
                 })
             }
@@ -27,6 +29,7 @@ struct EnableNotifications: View {
 // Preview for EnableNotifications
 struct EnableNotifications_Previews: PreviewProvider {
     static var previews: some View {
-        EnableNotifications() // Preview the EnableNotifications view
+        EnableNotifications()
+            .environmentObject(LocalNotificationManager())// Preview the EnableNotifications view
     }
 }

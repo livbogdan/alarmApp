@@ -53,6 +53,7 @@
 		E3D1CACD2AD8A27700190621 /* CircularTimeIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CACC2AD8A27700190621 /* CircularTimeIcon.swift */; };
 		E3D1CACF2AD8A81800190621 /* MainAddEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CACE2AD8A81800190621 /* MainAddEditView.swift */; };
 		E3D1CAD12AE0A33D00190621 /* SelectActivityViewExpanded.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAD02AE0A33D00190621 /* SelectActivityViewExpanded.swift */; };
+		E3D1CAD32AE0C86500190621 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAD22AE0C86500190621 /* LocalNotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +102,7 @@
 		E3D1CACC2AD8A27700190621 /* CircularTimeIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTimeIcon.swift; sourceTree = "<group>"; };
 		E3D1CACE2AD8A81800190621 /* MainAddEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAddEditView.swift; sourceTree = "<group>"; };
 		E3D1CAD02AE0A33D00190621 /* SelectActivityViewExpanded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectActivityViewExpanded.swift; sourceTree = "<group>"; };
+		E3D1CAD22AE0C86500190621 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +225,7 @@
 		E328A16B2ACA0A7F00B3E3B6 /* Notification */ = {
 			isa = PBXGroup;
 			children = (
+				E3D1CAD22AE0C86500190621 /* LocalNotificationManager.swift */,
 			);
 			path = Notification;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				E3D1CA842ACC8C4A00190621 /* AlarmModel.swift in Sources */,
 				E3D1CA862ACDC47300190621 /* ActivityConstans.swift in Sources */,
 				E3D1CAC92AD8635000190621 /* CenteralDatePickerView.swift in Sources */,
+				E3D1CAD32AE0C86500190621 /* LocalNotificationManager.swift in Sources */,
 				E3D1CABC2AD600C600190621 /* TimePicker.swift in Sources */,
 				E3D1CABA2AD5C4B400190621 /* TheToggleView.swift in Sources */,
 				E3D1CA912AD1849D00190621 /* CustomFont.swift in Sources */,
