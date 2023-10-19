@@ -26,6 +26,9 @@ struct MainAlarmView: View {
                 Task{
                     await lnManager
                         .getCurrentSetting()
+                    
+                    await lnManager
+                        .getPendingAlarm()
                 }
             }
             

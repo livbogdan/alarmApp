@@ -1,7 +1,7 @@
 import Foundation
 
 // Define an enum to represent different alarm sounds
-enum Sounds: String, CaseIterable {
+enum Sounds: String, CaseIterable, Codable {
     case wake_up = "Sound Wake Up" // A sound option for waking up
     case lagrima = "Lagrima" // Another sound option
     

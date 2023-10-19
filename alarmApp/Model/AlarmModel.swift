@@ -2,7 +2,7 @@ import Foundation
 import SwiftUI
 
 // Define a struct to represent an alarm with various properties
-struct AlarmModel: Identifiable {
+struct AlarmModel: Identifiable, Codable {
     let id = UUID().uuidString // Generate a unique identifier for each alarm
     
     let title: String // The title of the alarm
