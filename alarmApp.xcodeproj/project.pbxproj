@@ -54,6 +54,12 @@
 		E3D1CACF2AD8A81800190621 /* MainAddEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CACE2AD8A81800190621 /* MainAddEditView.swift */; };
 		E3D1CAD12AE0A33D00190621 /* SelectActivityViewExpanded.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAD02AE0A33D00190621 /* SelectActivityViewExpanded.swift */; };
 		E3D1CAD32AE0C86500190621 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAD22AE0C86500190621 /* LocalNotificationManager.swift */; };
+		E3D1CAD72AE5802700190621 /* kick-and-snare-hip-hop-style-noisy.wav in Resources */ = {isa = PBXBuildFile; fileRef = E3D1CAD42AE5802600190621 /* kick-and-snare-hip-hop-style-noisy.wav */; };
+		E3D1CAD82AE5802700190621 /* beat-mixed-full.wav in Resources */ = {isa = PBXBuildFile; fileRef = E3D1CAD52AE5802600190621 /* beat-mixed-full.wav */; };
+		E3D1CAD92AE5802700190621 /* mixed-hip-hop-beat-full.wav in Resources */ = {isa = PBXBuildFile; fileRef = E3D1CAD62AE5802700190621 /* mixed-hip-hop-beat-full.wav */; };
+		E3D1CADB2AE6DD7F00190621 /* Play Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CADA2AE6DD7F00190621 /* Play Sound.swift */; };
+		E3D1CADD2AE8358E00190621 /* SoundMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CADC2AE8358E00190621 /* SoundMenuView.swift */; };
+		E3D1CADF2AE8A4DE00190621 /* Commented Out Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CADE2AE8A4DE00190621 /* Commented Out Code.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +109,12 @@
 		E3D1CACE2AD8A81800190621 /* MainAddEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAddEditView.swift; sourceTree = "<group>"; };
 		E3D1CAD02AE0A33D00190621 /* SelectActivityViewExpanded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectActivityViewExpanded.swift; sourceTree = "<group>"; };
 		E3D1CAD22AE0C86500190621 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
+		E3D1CAD42AE5802600190621 /* kick-and-snare-hip-hop-style-noisy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "kick-and-snare-hip-hop-style-noisy.wav"; sourceTree = "<group>"; };
+		E3D1CAD52AE5802600190621 /* beat-mixed-full.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "beat-mixed-full.wav"; sourceTree = "<group>"; };
+		E3D1CAD62AE5802700190621 /* mixed-hip-hop-beat-full.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "mixed-hip-hop-beat-full.wav"; sourceTree = "<group>"; };
+		E3D1CADA2AE6DD7F00190621 /* Play Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Play Sound.swift"; sourceTree = "<group>"; };
+		E3D1CADC2AE8358E00190621 /* SoundMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SoundMenuView.swift; path = "alarmApp/Views/Supporting Views/SoundMenuView.swift"; sourceTree = SOURCE_ROOT; };
+		E3D1CADE2AE8A4DE00190621 /* Commented Out Code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Commented Out Code.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,7 +208,6 @@
 		E328A1682ACA0A4F00B3E3B6 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				E3D1CA872ACDC4FC00190621 /* SoundConstants.swift */,
 				E3D1CA7B2ACABD1300190621 /* ColorConstants.swift */,
 				E3D1CA852ACDC47300190621 /* ActivityConstans.swift */,
 				E3D1CA922AD30CFF00190621 /* ImageConstants.swift */,
@@ -233,6 +244,11 @@
 		E328A16C2ACA0A9200B3E3B6 /* Sound */ = {
 			isa = PBXGroup;
 			children = (
+				E3D1CAD52AE5802600190621 /* beat-mixed-full.wav */,
+				E3D1CAD42AE5802600190621 /* kick-and-snare-hip-hop-style-noisy.wav */,
+				E3D1CAD62AE5802700190621 /* mixed-hip-hop-beat-full.wav */,
+				E3D1CA872ACDC4FC00190621 /* SoundConstants.swift */,
+				E3D1CADA2AE6DD7F00190621 /* Play Sound.swift */,
 			);
 			path = Sound;
 			sourceTree = "<group>";
@@ -277,6 +293,7 @@
 				E3D1CABD2AD62B3A00190621 /* SelectActivityView.swift */,
 				E3D1CAC12AD7049300190621 /* AlarmRowMenu.swift */,
 				E3D1CAD02AE0A33D00190621 /* SelectActivityViewExpanded.swift */,
+				E3D1CADC2AE8358E00190621 /* SoundMenuView.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -284,6 +301,7 @@
 		E328A1702ACA0AE500B3E3B6 /* Unused Views */ = {
 			isa = PBXGroup;
 			children = (
+				E3D1CADE2AE8A4DE00190621 /* Commented Out Code.swift */,
 			);
 			path = "Unused Views";
 			sourceTree = "<group>";
@@ -368,8 +386,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3D1CAD82AE5802700190621 /* beat-mixed-full.wav in Resources */,
 				E328A15F2ACA0A0100B3E3B6 /* Preview Assets.xcassets in Resources */,
+				E3D1CAD92AE5802700190621 /* mixed-hip-hop-beat-full.wav in Resources */,
 				E328A18B2ACA12E400B3E3B6 /* Localizable.strings in Resources */,
+				E3D1CAD72AE5802700190621 /* kick-and-snare-hip-hop-style-noisy.wav in Resources */,
 				E3D1CA972AD34E5200190621 /* Alcatraz.otf in Resources */,
 				E3D1CA8E2AD1844400190621 /* TrackdriftRegular.ttf in Resources */,
 				E328A15C2ACA0A0100B3E3B6 /* Assets.xcassets in Resources */,
@@ -385,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3D1CAC62AD85D5500190621 /* CircularTimeView.swift in Sources */,
+				E3D1CADF2AE8A4DE00190621 /* Commented Out Code.swift in Sources */,
 				E3D1CA9D2AD364C500190621 /* MainGradient.swift in Sources */,
 				E328A15A2ACA09FF00B3E3B6 /* MainAlarmView.swift in Sources */,
 				E3D1CA842ACC8C4A00190621 /* AlarmModel.swift in Sources */,
@@ -397,6 +419,7 @@
 				E3D1CAC42AD85B0800190621 /* AddEditCircularAlarmView.swift in Sources */,
 				E3D1CAC22AD7049300190621 /* AlarmRowMenu.swift in Sources */,
 				E3D1CAB82AD5C3D000190621 /* AlarmToggleView.swift in Sources */,
+				E3D1CADB2AE6DD7F00190621 /* Play Sound.swift in Sources */,
 				E3D1CACB2AD877C300190621 /* TimeArcView.swift in Sources */,
 				E3D1CAA52AD43C1F00190621 /* AlarmManageView.swift in Sources */,
 				E3D1CAC02AD649D100190621 /* ListOfTheAlarmsView.swift in Sources */,
@@ -416,6 +439,7 @@
 				E3D1CA7C2ACABD1300190621 /* ColorConstants.swift in Sources */,
 				E3D1CA9B2AD3614D00190621 /* EnableNotifications.swift in Sources */,
 				E3D1CA802ACB067100190621 /* Time&DateSupport.swift in Sources */,
+				E3D1CADD2AE8358E00190621 /* SoundMenuView.swift in Sources */,
 				E3D1CA7E2ACB05AB00190621 /* TimeOfDayIcon.swift in Sources */,
 				E3D1CA9F2AD365E800190621 /* ScreenConstans.swift in Sources */,
 				E3D1CA8C2AD08A2900190621 /* FourGradientCircles.swift in Sources */,
