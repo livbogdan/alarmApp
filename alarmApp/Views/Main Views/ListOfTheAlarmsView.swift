@@ -4,8 +4,12 @@ import SwiftUI
 // Define a SwiftUI view called ListOfTheAlarmsView
 struct ListOfTheAlarmsView: View {
     
-    // Input data: an array of AlarmModel
-    var alarmViewModel: [AlarmModel]
+    /// Input data: an array of AlarmModel
+    //var alarmViewModel: [AlarmModel]
+    @EnvironmentObject var lnManager: LocalNotificationManager
+    
+    @State var isActive = false
+    @State var currentIndex: Int? = nil
     
     var body: some View {
         // Create a navigation stack
@@ -13,21 +17,18 @@ struct ListOfTheAlarmsView: View {
             ZStack {
                 // Create a list to display alarms
                 List {
-                    ForEach(0..<alarmViewModel.count, id: \.self) {
+                    ForEach(0..<lnManager.alarmViewModels.count, id: \.self) {
                         i in
-                        let alarmModel = alarmViewModel[i]
                         
-                        // Create a navigation link to edit individual alarms
-                        NavigationLink(destination: {
-                            // Display the AddEditAlarmView with parameters
-                            MainAddEditView(currentAlarmIndex: i, alarmModel: alarmModel)
-                            
+                        Button(action: {
+                            currentIndex = i
+                            isActive.toggle()
                         }, label: {
-                            HStack {
-                                AlarmRowMenu(model: alarmModel, i: i) // Display the alarm row menu
-                            }
+                            AlarmRowMenu(model: lnManager.alarmViewModels[i], i: i) // Display the alarm row menu
+                                .padding(.vertical)
                         })
                     }
+                    .onDelete(perform: deleteMe)
                 }
                 
                 // Display four gradient circles with reduced opacity
@@ -56,12 +57,24 @@ struct ListOfTheAlarmsView: View {
                 }
         }
     }
+    
+    func deleteMe(offsets: IndexSet) {
+        for index in offsets {
+            print("remove requestfrom \(lnManager.alarmViewModels[index].id)")
+            lnManager
+                .removeRequest(id: lnManager.alarmViewModels[index].id
+                )
+        }
+        
+        lnManager.alarmViewModels.remove(atOffsets: offsets)
+    }
 }
 
 // Define a preview for ListOfTheAlarmsView
 struct ListOfTheAlarmsView_Previews: PreviewProvider {
     static var previews: some View {
         // Preview the ListOfTheAlarmsView with dummy data
-        ListOfTheAlarmsView(alarmViewModel: AlarmModel.DummyAlarmDate())
+        ListOfTheAlarmsView()
+            .environmentObject(LocalNotificationManager())
     }
 }

@@ -18,7 +18,7 @@ struct MainAlarmView: View {
             if lnManager.isAuthorized {
                 
                 // Show list of alarms if notifications are authorized
-                ListOfTheAlarmsView(alarmViewModel: AlarmModel.DummyAlarmDate())
+                ListOfTheAlarmsView()
                     .tabItem({
                         Label("Alarms", systemImage: "alarm.fill")
                     })

@@ -3,6 +3,9 @@ import SwiftUI
 
 // Define a struct to represent an alarm with various properties
 struct AlarmModel: Identifiable, Codable {
+
+    // MARK: - Properties
+    
     let id = UUID().uuidString // Generate a unique identifier for each alarm
     
     let title: String // The title of the alarm
@@ -24,6 +27,8 @@ struct AlarmModel: Identifiable, Codable {
     var activityColor: Color {
         mainColors[colorIndex]
     }
+
+    // MARK: - Computed Properties
     
     // Calculate the duration of the alarm
     var timeInterval: TimeInterval {
@@ -40,6 +45,12 @@ struct AlarmModel: Identifiable, Codable {
         dateToTimeModel(date: end)
     }
     
+    var endDateComponents: DateComponents {
+        Calendar.current.dateComponents([.hour,.minute], from: self.end)
+    }
+
+    // MARK: - Factory Methods
+    
     // Factory method to create a default alarm
     static func DefaultAlarm() -> AlarmModel {
         AlarmModel(title: "Activity Completed",
@@ -55,13 +66,15 @@ struct AlarmModel: Identifiable, Codable {
     
     // Factory method to create dummy alarm data for testing
     static func DummyAlarmDate() -> [AlarmModel] {
+        
+        // Sample alarm instances
         [
-            // Sample alarm instances
             AlarmModel(title: "Titel1", body: "body1", repeats: false, sound: .beat_mixed_full, alarmEnabled: true, start: Date(), end: addHourToDate(date: Date(), numHours: 3, numMinutes:  10), activity: "moon.zzz.fill", colorIndex: 2),
             AlarmModel(title: "Titel2", body: "body2", repeats: true, sound: .kick_and_snare_hip_hop, alarmEnabled: false, start: Date(), end: addHourToDate(date: Date(), numHours: 0, numMinutes:  5), activity: "moon.fill", colorIndex: 0),
             AlarmModel(title: "Titel3", body: "body3", repeats: true, sound: .mixed_hip_hop_beat, alarmEnabled: true, start: Date(), end: addHourToDate(date: Date(), numHours: 5, numMinutes:  5), activity: "sunrise.fill", colorIndex: 3)
         ]
-            // Sort alarms by end time
-            .sorted(by: {$0.endTime < $1.endTime})
+        
+        // Sort alarms by end time
+        .sorted(by: {$0.endTime < $1.endTime})
     }
 }
