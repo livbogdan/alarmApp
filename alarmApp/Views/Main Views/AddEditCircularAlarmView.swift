@@ -16,7 +16,7 @@ struct AddEditCircularAlarmView: View {
             Spacer() // Create a vertical spacer.
             
             // Display the CircularTimeView for setting alarm time.
-            CircularTimeView(currentAlarmIndex: currentAlarmIndex, alarmModel: alarmModel, size: screenWidth / 2)
+            CircularTimeView(currentAlarmIndex: currentAlarmIndex, alarmModel: $alarmModel, size: screenWidth / 2)
             
             Spacer() // Create another vertical spacer.
             

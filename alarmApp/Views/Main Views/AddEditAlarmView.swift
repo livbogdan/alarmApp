@@ -17,7 +17,7 @@ struct AddEditAlarmView: View {
                     AlarmManageView() // Display the AlarmManageView when showAlarmManageView is true
                 }
                 
-                AddSaveMangeView(currentAlramIndex: currentAlramIndex, alarmModel: alarmModel) // Display the AddSaveMangeView
+                AddSaveMangeView(currentAlramIndex: currentAlramIndex, alarmModel: alarmModel)
             }
         }
         .onAppear {

@@ -10,25 +10,25 @@ struct ListOfTheAlarmsView: View {
     
     @State var isActive = false
     @State var currentIndex: Int? = nil
+    @State var addEditViewType: AddEditViewType = .Standard
     
     var body: some View {
         // Create a navigation stack
         NavigationStack {
             ZStack {
                 // Create a list to display alarms
-                List {
-                    ForEach(0..<lnManager.alarmViewModels.count, id: \.self) {
-                        i in
-                        
-                        Button(action: {
-                            currentIndex = i
-                            isActive.toggle()
-                        }, label: {
-                            AlarmRowMenu(model: lnManager.alarmViewModels[i], i: i) // Display the alarm row menu
-                                .padding(.vertical)
-                        })
+                VStack {
+                    List {
+                        ForEach(lnManager.alarmViewModels.indices, id: \.self) {
+                            i in
+                            
+                            AlarmRowMenuButton(model: lnManager.alarmViewModels[i], i: i, currentIndex: $currentIndex,isActive: $isActive)
+                                // Display the alarm row menu
+                        }
+                        .onDelete(perform: deleteMe)
                     }
-                    .onDelete(perform: deleteMe)
+                    
+                    SelectView(width: 50, addEditViewType: $addEditViewType, isActive: $isActive)
                 }
                 
                 // Display four gradient circles with reduced opacity
@@ -36,17 +36,19 @@ struct ListOfTheAlarmsView: View {
                     .opacity(0.1) // Set the opacity of the gradient circles
             }
                 .navigationTitle("Alarm List") // Set the navigation title
+                .sheet(isPresented: $isActive,
+                       onDismiss: {}){
+                    wrapAddEditAlarmIndex(currentAlarmIndex: $currentIndex, addEditViewType: addEditViewType)
+                }
                 .toolbar {
                     // Add a button to add a new alarm
                     ToolbarItem(placement: .navigationBarTrailing) {
-                        NavigationLink(destination: {
-                            // Display the AddEditAlarmView with a new alarm
-                            MainAddEditView(currentAlarmIndex: nil, alarmModel: .DefaultAlarm())
+                        
+                        Button(action: {
+                            isActive.toggle()
                         }, label: {
                             Text("Add") // Comment: Label for the button to add a new alarm
-                                ///.font(.largeTitle)
                                 .fontWeight(.semibold)
-                                ///.foregroundColor(gray) // Assuming 'gray' is defined somewhere
                         })
                     }
                     

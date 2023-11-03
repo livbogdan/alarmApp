@@ -2,7 +2,7 @@ import SwiftUI
 
 struct CircularTimeView: View {
     let currentAlarmIndex: Int?
-    @State var alarmModel: AlarmModel
+    @Binding var alarmModel: AlarmModel
     
     // Extract the start and end times from the alarm model.
     var startTime: Date {
@@ -69,6 +69,6 @@ struct CircularTimeView: View {
 struct CircularTimeView_Previews: PreviewProvider {
     static var previews: some View {
         // Preview the CircularTimeView with sample data.
-        CircularTimeView(currentAlarmIndex: nil, alarmModel: .DefaultAlarm(), size: screenWidth / 2)
+        CircularTimeView(currentAlarmIndex: nil, alarmModel: .constant(.DefaultAlarm()), size: screenWidth / 2)
     }
 }

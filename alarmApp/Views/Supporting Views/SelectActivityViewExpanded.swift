@@ -59,7 +59,7 @@ struct SelectActivityViewExpanded: View {
                             .padding(5)
                             .background(
                                 Circle()
-                                    .fill(isSelectedActivity && currentColor != white ? black.opacity(0.9) : .clear)
+                                    .fill(isSelectedActivity && currentColor != white ? black.opacity(0.2) : .clear)
                             )
                             .overlay(
                                 Circle()

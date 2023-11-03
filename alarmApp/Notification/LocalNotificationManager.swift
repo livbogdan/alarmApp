@@ -60,6 +60,8 @@ class LocalNotificationManager: NSObject, ObservableObject, UNUserNotificationCe
     override init() {
         super.init()
         
+        notificationCenter.delegate = self
+        
         // Load saved AlarmModel data from UserDefaults
         guard let data = UserDefaults.standard.data(forKey: itemKey),
               let savedItems = try? JSONDecoder().decode([AlarmModel].self, from: data)
@@ -69,6 +71,21 @@ class LocalNotificationManager: NSObject, ObservableObject, UNUserNotificationCe
     }
     
     // MARK: - Notifications
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification) async -> UNNotificationPresentationOptions {
+        
+        let notificationId = notification.request.identifier
+        
+        if let index = alarmViewModels.firstIndex(where: {
+            $0.id == notificationId
+        }) {
+            alarmViewModels[index].alarmEnabled = false
+        }
+        
+        pendingAlarms = await notificationCenter.pendingNotificationRequests()
+        
+        return [.sound, .banner]
+    }
     
     // Get pending notifications
     func getPendingAlarm() async {
@@ -124,5 +141,20 @@ class LocalNotificationManager: NSObject, ObservableObject, UNUserNotificationCe
             // Remove the notification request from the pending alarms array
             pendingAlarms.remove(at: index)
         }
+    }
+    
+    func safeAppend(localNotification: AlarmModel) {
+        if let index = alarmViewModels
+            .firstIndex(where: {$0.id == localNotification.id}){
+            
+            alarmViewModels[index] = localNotification
+        } else {
+            alarmViewModels.append(localNotification)
+        }
+        
+        alarmViewModels = alarmViewModels
+            .sorted(by: {
+                $0.endTime < $1.endTime
+            })
     }
 }
