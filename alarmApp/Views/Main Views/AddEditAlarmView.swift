@@ -21,7 +21,7 @@ struct AddEditAlarmView: View {
             }
         }
         .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                 withAnimation {
                     showAlarmManageView = false // Hide the AlarmManageView after 10 seconds
                 }
