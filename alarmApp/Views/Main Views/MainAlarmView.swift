@@ -2,6 +2,8 @@ import SwiftUI
 import SwiftUI
 
 struct MainAlarmView: View {
+    
+    @Binding var isSignedIn: Bool
 
     // Create an environment object to access the notification manager
     @EnvironmentObject var lnManager: LocalNotificationManager 
@@ -67,6 +69,6 @@ struct MainAlarmView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MainAlarmView()
+        MainAlarmView(isSignedIn: .constant(true))
     }
 }

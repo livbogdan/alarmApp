@@ -16,6 +16,14 @@
 		E39A8B182AF003F400903C14 /* wrapAddEditAlarmIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39A8B172AF003F400903C14 /* wrapAddEditAlarmIndex.swift */; };
 		E39A8B1E2AF1563F00903C14 /* ImageDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39A8B1D2AF1563F00903C14 /* ImageDisplayView.swift */; };
 		E39A8B202AF157FA00903C14 /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39A8B1F2AF157FA00903C14 /* SelectView.swift */; };
+		E39A8B2C2AF7EC3800903C14 /* alarmAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39A8B2B2AF7EC3800903C14 /* alarmAppTests.swift */; };
+		E39A8B332AF7FC2400903C14 /* EmailTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39A8B322AF7FC2400903C14 /* EmailTextFieldView.swift */; };
+		E39A8B352AF80B5D00903C14 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39A8B342AF80B5D00903C14 /* RegistrationView.swift */; };
+		E39A8B392AF8155400903C14 /* PasswordTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39A8B382AF8155400903C14 /* PasswordTextFieldView.swift */; };
+		E39A8B3B2AF8222C00903C14 /* SignInScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39A8B3A2AF8222C00903C14 /* SignInScreenView.swift */; };
+		E39A8B402AF8364700903C14 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = E39A8B3F2AF8364700903C14 /* FirebaseDatabase */; };
+		E39A8B422AF8388F00903C14 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E39A8B412AF8388F00903C14 /* GoogleService-Info.plist */; };
+		E39A8B432AF8388F00903C14 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E39A8B412AF8388F00903C14 /* GoogleService-Info.plist */; };
 		E3D1CA7C2ACABD1300190621 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CA7B2ACABD1300190621 /* ColorConstants.swift */; };
 		E3D1CA7E2ACB05AB00190621 /* TimeOfDayIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CA7D2ACB05AB00190621 /* TimeOfDayIcon.swift */; };
 		E3D1CA802ACB067100190621 /* Time&DateSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CA7F2ACB067100190621 /* Time&DateSupport.swift */; };
@@ -36,7 +44,6 @@
 		E3D1CAA32AD4323E00190621 /* AddEditAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAA22AD4323E00190621 /* AddEditAlarmView.swift */; };
 		E3D1CAA52AD43C1F00190621 /* AlarmManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAA42AD43C1F00190621 /* AlarmManageView.swift */; };
 		E3D1CAA72AD446E900190621 /* AddSaveMangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CAA62AD446E900190621 /* AddSaveMangeView.swift */; };
-		E3D1CAA92AD5BE2A00190621 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3D1CAA82AD5BE2A00190621 /* GoogleService-Info.plist */; };
 		E3D1CAAC2AD5BF2A00190621 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E3D1CAAB2AD5BF2A00190621 /* FirebaseAnalytics */; };
 		E3D1CAAE2AD5BF2A00190621 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E3D1CAAD2AD5BF2A00190621 /* FirebaseAuth */; };
 		E3D1CAB02AD5BF2A00190621 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E3D1CAAF2AD5BF2A00190621 /* FirebaseFirestore */; };
@@ -65,6 +72,16 @@
 		E3D1CADF2AE8A4DE00190621 /* Commented Out Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D1CADE2AE8A4DE00190621 /* Commented Out Code.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E39A8B2D2AF7EC3800903C14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E328A14C2ACA09FF00B3E3B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E328A1532ACA09FF00B3E3B6;
+			remoteInfo = alarmApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		E328A1542ACA09FF00B3E3B6 /* alarmApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alarmApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E328A1572ACA09FF00B3E3B6 /* alarmAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alarmAppApp.swift; sourceTree = "<group>"; };
@@ -78,6 +95,13 @@
 		E39A8B172AF003F400903C14 /* wrapAddEditAlarmIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wrapAddEditAlarmIndex.swift; sourceTree = "<group>"; };
 		E39A8B1D2AF1563F00903C14 /* ImageDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDisplayView.swift; sourceTree = "<group>"; };
 		E39A8B1F2AF157FA00903C14 /* SelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
+		E39A8B292AF7EC3800903C14 /* alarmAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alarmAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E39A8B2B2AF7EC3800903C14 /* alarmAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alarmAppTests.swift; sourceTree = "<group>"; };
+		E39A8B322AF7FC2400903C14 /* EmailTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextFieldView.swift; sourceTree = "<group>"; };
+		E39A8B342AF80B5D00903C14 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		E39A8B382AF8155400903C14 /* PasswordTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextFieldView.swift; sourceTree = "<group>"; };
+		E39A8B3A2AF8222C00903C14 /* SignInScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreenView.swift; sourceTree = "<group>"; };
+		E39A8B412AF8388F00903C14 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E3D1CA7B2ACABD1300190621 /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		E3D1CA7D2ACB05AB00190621 /* TimeOfDayIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOfDayIcon.swift; sourceTree = "<group>"; };
 		E3D1CA7F2ACB067100190621 /* Time&DateSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Time&DateSupport.swift"; sourceTree = "<group>"; };
@@ -99,7 +123,6 @@
 		E3D1CAA22AD4323E00190621 /* AddEditAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditAlarmView.swift; sourceTree = "<group>"; };
 		E3D1CAA42AD43C1F00190621 /* AlarmManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmManageView.swift; sourceTree = "<group>"; };
 		E3D1CAA62AD446E900190621 /* AddSaveMangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSaveMangeView.swift; sourceTree = "<group>"; };
-		E3D1CAA82AD5BE2A00190621 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E3D1CAB52AD5C1AA00190621 /* CancelSaveAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelSaveAlarm.swift; sourceTree = "<group>"; };
 		E3D1CAB72AD5C3D000190621 /* AlarmToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmToggleView.swift; sourceTree = "<group>"; };
 		E3D1CAB92AD5C4B400190621 /* TheToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheToggleView.swift; sourceTree = "<group>"; };
@@ -128,11 +151,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E39A8B402AF8364700903C14 /* FirebaseDatabase in Frameworks */,
 				E3D1CAAC2AD5BF2A00190621 /* FirebaseAnalytics in Frameworks */,
 				E3D1CAAE2AD5BF2A00190621 /* FirebaseAuth in Frameworks */,
 				E3D1CAB02AD5BF2A00190621 /* FirebaseFirestore in Frameworks */,
 				E3D1CAB42AD5BF2A00190621 /* FirebaseStorage in Frameworks */,
 				E3D1CAB22AD5BF2A00190621 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E39A8B262AF7EC3800903C14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +174,9 @@
 			isa = PBXGroup;
 			children = (
 				E328A1562ACA09FF00B3E3B6 /* alarmApp */,
+				E39A8B2A2AF7EC3800903C14 /* alarmAppTests */,
 				E328A1552ACA09FF00B3E3B6 /* Products */,
+				E39A8B3E2AF8363E00903C14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				E328A1542ACA09FF00B3E3B6 /* alarmApp.app */,
+				E39A8B292AF7EC3800903C14 /* alarmAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,7 +192,7 @@
 		E328A1562ACA09FF00B3E3B6 /* alarmApp */ = {
 			isa = PBXGroup;
 			children = (
-				E3D1CAA82AD5BE2A00190621 /* GoogleService-Info.plist */,
+				E39A8B412AF8388F00903C14 /* GoogleService-Info.plist */,
 				E3D1CA942AD34A5300190621 /* Info.plist */,
 				E328A16C2ACA0A9200B3E3B6 /* Sound */,
 				E328A16B2ACA0A7F00B3E3B6 /* Notification */,
@@ -269,6 +303,7 @@
 				E3D1CAA22AD4323E00190621 /* AddEditAlarmView.swift */,
 				E3D1CAC32AD85B0800190621 /* AddEditCircularAlarmView.swift */,
 				E3D1CACE2AD8A81800190621 /* MainAddEditView.swift */,
+				E39A8B3A2AF8222C00903C14 /* SignInScreenView.swift */,
 			);
 			path = "Main Views";
 			sourceTree = "<group>";
@@ -303,6 +338,9 @@
 				E3D1CADC2AE8358E00190621 /* SoundMenuView.swift */,
 				E39A8B1D2AF1563F00903C14 /* ImageDisplayView.swift */,
 				E39A8B1F2AF157FA00903C14 /* SelectView.swift */,
+				E39A8B322AF7FC2400903C14 /* EmailTextFieldView.swift */,
+				E39A8B342AF80B5D00903C14 /* RegistrationView.swift */,
+				E39A8B382AF8155400903C14 /* PasswordTextFieldView.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -313,6 +351,21 @@
 				E3D1CADE2AE8A4DE00190621 /* Commented Out Code.swift */,
 			);
 			path = "Unused Views";
+			sourceTree = "<group>";
+		};
+		E39A8B2A2AF7EC3800903C14 /* alarmAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				E39A8B2B2AF7EC3800903C14 /* alarmAppTests.swift */,
+			);
+			path = alarmAppTests;
+			sourceTree = "<group>";
+		};
+		E39A8B3E2AF8363E00903C14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E3D1CAC72AD862E700190621 /* Circular Time View */ = {
@@ -348,10 +401,29 @@
 				E3D1CAAF2AD5BF2A00190621 /* FirebaseFirestore */,
 				E3D1CAB12AD5BF2A00190621 /* FirebaseFirestoreSwift */,
 				E3D1CAB32AD5BF2A00190621 /* FirebaseStorage */,
+				E39A8B3F2AF8364700903C14 /* FirebaseDatabase */,
 			);
 			productName = alarmApp;
 			productReference = E328A1542ACA09FF00B3E3B6 /* alarmApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E39A8B282AF7EC3800903C14 /* alarmAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E39A8B312AF7EC3800903C14 /* Build configuration list for PBXNativeTarget "alarmAppTests" */;
+			buildPhases = (
+				E39A8B252AF7EC3800903C14 /* Sources */,
+				E39A8B262AF7EC3800903C14 /* Frameworks */,
+				E39A8B272AF7EC3800903C14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E39A8B2E2AF7EC3800903C14 /* PBXTargetDependency */,
+			);
+			name = alarmAppTests;
+			productName = alarmAppTests;
+			productReference = E39A8B292AF7EC3800903C14 /* alarmAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -365,6 +437,10 @@
 				TargetAttributes = {
 					E328A1532ACA09FF00B3E3B6 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					E39A8B282AF7EC3800903C14 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E328A1532ACA09FF00B3E3B6;
 					};
 				};
 			};
@@ -386,6 +462,7 @@
 			projectRoot = "";
 			targets = (
 				E328A1532ACA09FF00B3E3B6 /* alarmApp */,
+				E39A8B282AF7EC3800903C14 /* alarmAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -397,13 +474,21 @@
 			files = (
 				E3D1CAD82AE5802700190621 /* beat-mixed-full.wav in Resources */,
 				E328A15F2ACA0A0100B3E3B6 /* Preview Assets.xcassets in Resources */,
+				E39A8B422AF8388F00903C14 /* GoogleService-Info.plist in Resources */,
 				E3D1CAD92AE5802700190621 /* mixed-hip-hop-beat-full.wav in Resources */,
 				E328A18B2ACA12E400B3E3B6 /* Localizable.strings in Resources */,
 				E3D1CAD72AE5802700190621 /* kick-and-snare-hip-hop-style-noisy.wav in Resources */,
 				E3D1CA972AD34E5200190621 /* Alcatraz.otf in Resources */,
 				E3D1CA8E2AD1844400190621 /* TrackdriftRegular.ttf in Resources */,
 				E328A15C2ACA0A0100B3E3B6 /* Assets.xcassets in Resources */,
-				E3D1CAA92AD5BE2A00190621 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E39A8B272AF7EC3800903C14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E39A8B432AF8388F00903C14 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +511,9 @@
 				E3D1CABA2AD5C4B400190621 /* TheToggleView.swift in Sources */,
 				E39A8B1E2AF1563F00903C14 /* ImageDisplayView.swift in Sources */,
 				E3D1CA912AD1849D00190621 /* CustomFont.swift in Sources */,
+				E39A8B392AF8155400903C14 /* PasswordTextFieldView.swift in Sources */,
+				E39A8B3B2AF8222C00903C14 /* SignInScreenView.swift in Sources */,
+				E39A8B332AF7FC2400903C14 /* EmailTextFieldView.swift in Sources */,
 				E3D1CAC42AD85B0800190621 /* AddEditCircularAlarmView.swift in Sources */,
 				E39A8B182AF003F400903C14 /* wrapAddEditAlarmIndex.swift in Sources */,
 				E3D1CAC22AD7049300190621 /* AlarmRowMenu.swift in Sources */,
@@ -440,6 +528,7 @@
 				E3D1CAA12AD36A8200190621 /* ButtonView.swift in Sources */,
 				E3D1CA932AD30CFF00190621 /* ImageConstants.swift in Sources */,
 				E3D1CACD2AD8A27700190621 /* CircularTimeIcon.swift in Sources */,
+				E39A8B352AF80B5D00903C14 /* RegistrationView.swift in Sources */,
 				E3D1CAB62AD5C1AA00190621 /* CancelSaveAlarm.swift in Sources */,
 				E3D1CABE2AD62B3A00190621 /* SelectActivityView.swift in Sources */,
 				E3D1CACF2AD8A81800190621 /* MainAddEditView.swift in Sources */,
@@ -459,7 +548,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E39A8B252AF7EC3800903C14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E39A8B2C2AF7EC3800903C14 /* alarmAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E39A8B2E2AF7EC3800903C14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E328A1532ACA09FF00B3E3B6 /* alarmApp */;
+			targetProxy = E39A8B2D2AF7EC3800903C14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E328A18D2ACA12E400B3E3B6 /* Localizable.strings */ = {
@@ -647,6 +752,42 @@
 			};
 			name = Release;
 		};
+		E39A8B2F2AF7EC3800903C14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.livbogdan.alarmAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/alarmApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/alarmApp";
+			};
+			name = Debug;
+		};
+		E39A8B302AF7EC3800903C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.livbogdan.alarmAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/alarmApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/alarmApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -668,6 +809,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		E39A8B312AF7EC3800903C14 /* Build configuration list for PBXNativeTarget "alarmAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E39A8B2F2AF7EC3800903C14 /* Debug */,
+				E39A8B302AF7EC3800903C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -682,6 +832,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E39A8B3F2AF8364700903C14 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3D1CAAA2AD5BF2A00190621 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
 		E3D1CAAB2AD5BF2A00190621 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E3D1CAAA2AD5BF2A00190621 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

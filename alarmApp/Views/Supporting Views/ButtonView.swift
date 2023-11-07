@@ -13,7 +13,7 @@ struct ButtonView: View {
             .padding() // Apply padding to the text
             .frame(maxWidth: .infinity) // Set the frame width to maximum
             .background(MainGradient(endRadius: endRadius, scaleX: scaleX)) // Apply gradient background
-            .cornerRadius(30) // Round the corners of the button
+            .cornerRadius(10) // Round the corners of the button
     }
 }
 

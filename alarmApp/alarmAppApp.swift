@@ -17,7 +17,9 @@ struct alarmAppApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
-            SplashScreenView()
+            SignInScreenView()
+            //RegistrationView()
+            //SplashScreenView()
             //EnableNotifications()
                 .environmentObject(lnManager)
         }
