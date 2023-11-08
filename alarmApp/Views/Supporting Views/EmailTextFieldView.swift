@@ -18,10 +18,7 @@ struct EmailTextFieldView: View {
               .foregroundColor(.red)
           }
 
-    VStack {
-      
-
-        
+    VStack {    
       TextField(placeholder, text: $email)
         .keyboardType(.emailAddress)
         .autocapitalization(.none)

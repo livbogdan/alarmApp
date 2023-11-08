@@ -14,14 +14,13 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct alarmAppApp: App {
     @StateObject var lnManager: LocalNotificationManager = LocalNotificationManager()
+    @StateObject var authViewModel = AuthViewModel()
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
-            SignInScreenView()
-            //RegistrationView()
-            //SplashScreenView()
-            //EnableNotifications()
+            SplashScreenView()
                 .environmentObject(lnManager)
+                .environmentObject(authViewModel)
         }
     }
 }
