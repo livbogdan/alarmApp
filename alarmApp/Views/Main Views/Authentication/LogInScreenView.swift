@@ -4,18 +4,20 @@ import SwiftUI
 
 struct LogInScreenView: View {
 
-  // MARK: - Properties
+// MARK: - Properties
   
   @State private var email = ""
   
   @State private var password = ""
   
   @State private var showMainView = false
+    
+  @State private var isSignin = false
   
   @EnvironmentObject var authViewModel: AuthViewModel
   // Create an instance of AuthViewModel for authentication
 
-  // MARK: - Body
+// MARK: - Body
   
   var body: some View {
 
@@ -32,14 +34,16 @@ struct LogInScreenView: View {
       }
       .padding()
 
-      // MARK: - Sign In
+// MARK: - Sign In
       
       // Sign In button
       Button {
+          // Perform user login action
           Task {
               try await authViewModel.signIn(withEmail: email, password: password)
+              print("logged in")
           }
-          // Perform user login action
+          
       } label: {
         ButtonView(text: "Log In")
         // Display "Log In" button
@@ -47,7 +51,7 @@ struct LogInScreenView: View {
       .disabled(!formIsValid)
       .opacity(formIsValid ? 1.0 : 0.5)
 
-      // MARK: - Navigation
+// MARK: - Navigation
       
       // Navigation link to RegistrationView
       NavigationLink {

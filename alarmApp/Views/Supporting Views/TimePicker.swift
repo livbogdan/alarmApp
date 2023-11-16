@@ -7,7 +7,7 @@ struct TimePicker: View {
 
     var body: some View {
         // Display a DatePicker for selecting a time (hour and minute)
-        DatePicker("", selection: $time, displayedComponents: .hourAndMinute)
+        DatePicker("", selection: $time, displayedComponents: .hourAndMinute).datePickerStyle(.automatic)
             .scaleEffect(scale) // Scale the size of the DatePicker
             .labelsHidden() // Hide the labels associated with the DatePicker
     }

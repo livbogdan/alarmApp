@@ -2,7 +2,7 @@ import Foundation
 
 // MARK: - User Model
 
-struct User: Identifiable, Codable {
+struct Users: Identifiable, Codable {
 
     // Properties
     let id: String
@@ -23,9 +23,9 @@ struct User: Identifiable, Codable {
 
 // MARK: - Mock User Extension
 
-extension User {
+extension Users {
 
     // Mock user for testing
-    static var MOC_USER = User(id: NSUUID().uuidString, fullName: "Bogdan", email: "bogdan@livanov")
+    static var MOC_USER = Users(id: NSUUID().uuidString, fullName: "Bogdan", email: "bogdan@livanov")
 
 }

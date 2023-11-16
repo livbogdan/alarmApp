@@ -203,7 +203,6 @@
 		E328A1562ACA09FF00B3E3B6 /* alarmApp */ = {
 			isa = PBXGroup;
 			children = (
-				E39A8B442AFB1BD100903C14 /* FireBase */,
 				E39A8B412AF8388F00903C14 /* GoogleService-Info.plist */,
 				E3D1CA942AD34A5300190621 /* Info.plist */,
 				E328A16C2ACA0A9200B3E3B6 /* Sound */,
@@ -381,13 +380,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E39A8B442AFB1BD100903C14 /* FireBase */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = FireBase;
 			sourceTree = "<group>";
 		};
 		E39A8B4E2AFB279700903C14 /* Authentication */ = {

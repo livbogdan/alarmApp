@@ -8,12 +8,19 @@ struct SplashScreenView: View {
     // Initial font size value
     @State private var fontSize = 15
     @State var isSignedIn = false
+    @EnvironmentObject var authViewModel: AuthViewModel
     
     var body: some View {
         // Check if the view is active
         if isActive {
             // Show the MainAlarmView when isActive is true/
-            MainAlarmView(isSignedIn: $isSignedIn)
+            
+            if authViewModel.userSession != nil {
+                MainAlarmView()
+            } else {
+                LogInScreenView()
+            }
+            
         } else {
             ZStack {
                 // Create a view with four gradient circles

@@ -3,6 +3,7 @@
 import Foundation
 import Firebase
 import FirebaseFirestoreSwift
+import FirebaseAuth
 
 // MARK: - Form Validation Protocol
 
@@ -17,9 +18,9 @@ class AuthViewModel: ObservableObject {
 
   // MARK: - Properties
   
-  @Published var userSession: FirebaseAuth.User?
+  @Published var userSession: User?
   
-  @Published var currentUser: User?
+  @Published var currentUser: Users?
    
   // MARK: - Initialization
   
@@ -61,7 +62,7 @@ class AuthViewModel: ObservableObject {
       
       self.userSession = result.user
       
-      let user = User(id: result.user.uid, fullName: fullname, email: email)
+      let user = Users(id: result.user.uid, fullName: fullname, email: email)
       
       let encodedUser = try Firestore.Encoder().encode(user)
       
@@ -118,7 +119,7 @@ class AuthViewModel: ObservableObject {
     
     guard let snapshot = try? await Firestore.firestore().collection("user").document(uid).getDocument() else {return}
     
-    self.currentUser = try? snapshot.data(as: User.self)
+    self.currentUser = try? snapshot.data(as: Users.self)
     
     //print("Current user is \(String(describing: self.currentUser))")
 
